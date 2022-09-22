@@ -22,7 +22,7 @@ $grey-color-dark: darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width: 50% !default;
+$content-width: 80% !default;
 
 $on-palm: 90% !default;
 $on-laptop: 800px !default;
@@ -53,4 +53,4 @@ $on-laptop: 800px !default;
 }
 
 // Import partials.
-@import "minima/base", "minima/layout", "minima/syntax-highlighting";
+@import "realjame/base", "realjame/layout", "realjame/syntax-highlighting";

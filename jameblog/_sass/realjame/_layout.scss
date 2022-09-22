@@ -2,22 +2,23 @@
  * Site header
  */
 .site-header {
-	min-height: $spacing-unit * 1.865;
+	// min-height: $spacing-unit * 1.865;
 
 	// Positioning context for the mobile navigation icon
 	position: relative;
 }
 
 .site-title {
-	@include relative-font-size(1.8);
+	// @include relative-font-size(1.8);
 	color: $text-color;
-	font-weight: bold;
+	// font-weight: bold;
 	// line-height: $base-line-height * $base-font-size * 2.25;
 	// letter-spacing: -1px;
-	margin-bottom: 0;
+	margin: 0;
 	text-align: center;
-	display: flex;
+	// display: flex;
 	justify-content: center;
+	line-height: normal; // override to match realja.me
 }
 
 .site-nav {
@@ -39,6 +40,11 @@
 		margin: 0 10px;
 		padding: 0.5em;
 		border-radius: 3px;
+
+		@media (max-width: 768px) {
+			margin: 0 0.25em;
+			padding: 0.2em;
+		}
 	}
 
 	@include media-query($on-palm) {
@@ -116,14 +122,15 @@
 
 .site-footer a {
 	width: auto;
-	padding: auto;
+	padding: 1em;
 	background-color: #444;
 	margin: 0 10px;
 	border-radius: 3px;
 	white-space: nowrap;
 
 	@media (max-width: 768px) {
-		// margin: 2.5px;
+		margin: 0 0.25em;
+		padding: 0.2em;
 	}
 }
 
@@ -142,7 +149,8 @@
 .post-list-heading {
 	@include relative-font-size(1.75);
 	text-align: center;
-	font-weight: bold;
+	// font-weight: bold;
+	line-height: normal; // override to match realja.me
 }
 
 .post-list {

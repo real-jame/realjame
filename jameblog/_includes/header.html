@@ -2,7 +2,8 @@
 
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
+    <h1 class="site-title">{{ site.title | escape }}</h1>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -22,7 +23,9 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-          <a class="page-link" href="https://realja.me">Back to realja.me</a>
+          <a class="page-link" href="https://realja.me">Home</a>
+          <a class="page-link" href="https://realja.me/blog">Blog</a>
+          <a class="page-link" href="https://realja.me/contact.html">About</a>
         <!-- </div> -->
       </nav>
     {%- endif -%}
