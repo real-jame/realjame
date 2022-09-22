@@ -1,3 +1,5 @@
+/* TODO: use the dark mode preference to replace icons with their light mode version or vice versa */
+
 header {
 }
 
@@ -74,7 +76,7 @@ p {
 
 .icon {
 	vertical-align: middle;
-	width: 1em;
+	/* width: 1em; */
 	height: 1em;
 	margin: 0;
 	padding: 0;
@@ -97,7 +99,7 @@ p {
 
 	nav a,
 	footer a {
-		marginr: 0 0.25em;
+		margin: 0 0.25em;
 		padding: 0.2em;
 	}
 }
