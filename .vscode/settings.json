@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.root": "./src"
+    "liveServer.settings.root": "./"
+    // For debugging either part of the site - to make links work properly, change it to '/src' for the main pages and `/jameblog' for the blog.
 }
