@@ -8,7 +8,7 @@ services:
   #     - "./jameblog:/srv/jekyll"
   blog:
     image: nginx:latest
-    container_name: realja.me/blog
+    container_name: realja.me_blog
     volumes:
       - "./jameblog/_site:/usr/share/nginx/html"
     ports:
