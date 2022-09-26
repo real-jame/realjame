@@ -1,18 +1,20 @@
 version: "3.8"
+# TODO: figure out how to build the Jekyll blog in a separate Docker service so it's easier to get started without syncing the build on my dev computer over GitHub.
 services:
-  jekyllbuild:
-    build:
-      context: -
-      args:
-        build-command: "bundle exec jekyll serve --watch --drafts --incremental --config _config-dev.yml"
-    volumes:
-      - "./jameblog:/srv/jekyll"
+  # jekyllbuild:
+  #   image: jekyll/jekyll:4.2.2
+  #   command: "bundle; jekyll build"
+  #   volumes:
+  #     - "./jameblog:/srv/jekyll"
   nginx:
     image: nginx:latest
     container_name: realja.me
     volumes:
       - ./src:/usr/share/nginx/html
+      - "./jameblog/_site:/usr/share/nginx/html/blog"
     ports:
       - 1000:80
       - 1001:443
     restart: unless-stopped
+volumes:
+  website:
