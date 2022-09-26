@@ -1,5 +1,12 @@
 version: "3.8"
 services:
+  jekyllbuild:
+    build:
+      context: -
+      args:
+        build-command: "bundle exec jekyll serve --watch --drafts --incremental --config _config-dev.yml"
+    volumes:
+      - "./jameblog:/srv/jekyll"
   nginx:
     image: nginx:latest
     container_name: realja.me
