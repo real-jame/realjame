@@ -6,7 +6,16 @@ services:
   #   command: "bundle; jekyll build"
   #   volumes:
   #     - "./jameblog:/srv/jekyll"
-  nginx:
+  blog:
+    image: nginx:latest
+    container_name: realja.me/blog
+    volumes:
+      - "./jameblog/_site:/usr/share/nginx/html"
+    ports:
+      - 1100:80
+      - 1101:443
+    restart: unless-stopped   
+  website:
     image: nginx:latest
     container_name: realja.me
     volumes:
