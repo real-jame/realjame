@@ -3,10 +3,10 @@
 	"file": "main.css",
 	"sources": [
 		"main.scss",
-		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.4/_sass/realjame.scss",
-		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.4/_sass/realjame/_base.scss",
-		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.4/_sass/realjame/_layout.scss",
-		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.4/_sass/realjame/_syntax-highlighting.scss"
+		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.5/_sass/realjame.scss",
+		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.5/_sass/realjame/_base.scss",
+		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.5/_sass/realjame/_layout.scss",
+		"vendor/bundle/ruby/3.1.0/gems/realjame-0.1.5/_sass/realjame/_syntax-highlighting.scss"
 	],
 	"sourcesContent": [
 		"@import \"realjame\";\n",
