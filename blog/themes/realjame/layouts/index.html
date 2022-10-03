@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{- partial "head.html" . -}}
+
+	<body>
+		{{- partial "header.html" . -}}
+		<body>
+			<main class="page-content" aria-label="Content">
+				{{ .Content }}
+				<a href="">See all articles...</a>
+			</main>
+		</body>
+
+		{{- partial "footer.html" . -}}
+	</body>
+</html>
