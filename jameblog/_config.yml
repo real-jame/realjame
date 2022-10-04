@@ -28,7 +28,6 @@ twitter_username: real__jame
 # github_username: atomicchocolate
 
 # Build settings
-theme: realjame
 plugins:
   - jekyll-feed
 # Exclude from processing.
