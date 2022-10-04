@@ -1,26 +1,31 @@
 ---
 layout: default
+title: "Posts"
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <h2 class="page-heading">Blog</h1>
 
   {{ content }}
 
+  <!-- <div id="categories">
+    <h2>Articles by category...</h2>
+    {% for category in site.categories %}
+      <a class="category-button" href="">{{ category | first }}</a>
+    {% endfor %}
+  </div> -->
+  <p>List all posts by: <a href="categories">category</a> / <a href="list">date</a></p>
+
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}

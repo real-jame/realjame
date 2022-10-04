@@ -143,7 +143,7 @@
 }
 
 .page-heading {
-	@include relative-font-size(2);
+	// @include relative-font-size(2);
 }
 
 .post-list-heading {
@@ -157,14 +157,15 @@
 	margin-left: 0;
 	list-style: none;
 
-	> li {
-		margin-bottom: $spacing-unit;
+	> li > a {
+		@include relative-font-size(1.4);
+		font-weight: bold;
 	}
 }
 
 .post-meta {
 	font-size: $small-font-size;
-	color: $grey-color;
+	color: $grey-color-light;
 	text-align: center;
 }
 

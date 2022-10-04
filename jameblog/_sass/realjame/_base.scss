@@ -1,27 +1,4 @@
 /**
- * Reset some basic elements
- */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-hr,
-dl,
-dd,
-ol,
-ul,
-figure {
-	margin: 0;
-	padding: 0;
-}
-
-/**
  * Basic styling
  */
 body {
@@ -38,9 +15,6 @@ body {
 	width: 50%;
 	margin: auto;
 	min-height: 100vh;
-	@media (max-width: 768px) {
-		width: 90%;
-	}
 }
 
 /**
@@ -61,6 +35,12 @@ dl,
 figure,
 %vertical-rhythm {
 	margin-bottom: $spacing-unit / 2;
+}
+
+h1,
+h2 {
+	margin: 0;
+	text-align: center;
 }
 
 /**
