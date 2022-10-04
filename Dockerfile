@@ -5,12 +5,6 @@ WORKDIR /blog
 
 COPY ./jameblog /blog
 
-# RUN bundle install
-# RUN bundle update
-
-# RUN chown -R $(whoami):$(whoami) /blog && \
-# chmod +w /blog/
-
 RUN chmod 777 /blog
 
 RUN jekyll build
