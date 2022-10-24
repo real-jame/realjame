@@ -15,6 +15,10 @@ body {
 	width: 50%;
 	margin: auto;
 	min-height: 100vh;
+
+	@include media-query($on-palm) {
+		width: 90%;
+	}
 }
 
 /**
