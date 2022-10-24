@@ -5,7 +5,7 @@ categories: old-roblox project update
 ---
 
 Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.
-![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game, a bay filled with ghosts.](../files/SpookingOutThumbnail.png)
+![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game, a bay filled with ghosts.](/blog/media/SpookingOutThumbnail.png)
 Come play the game with us on a 24/7 server I'm hosting for the game, or [download a copy of the game for yourself](https://cdn.discordapp.com/attachments/1033943226727542887/1033943288463511692/Spooking_Out.rbxl).
 
 ```
@@ -35,10 +35,10 @@ Speaking of which, secondary items! You can choose a 2nd item to equip alongside
 # Screenshots
 
 _Sorry for the black bar on the bottom, I didn't record it correctly. In that area would be a status bar telling you the amount of ghosts left and when the next round will start._
-![Gameplay footage, showcasing the game's mechanics of catching ghosts and throwing them into the hole.](../files/SpookingOutGameplay.mp4)
-![A player standing on a dirt pathway in a campsite surrounded by a forest, and ghosts.](../files/SpookingOutScreenshot-1.png)
-![A player attacking a ghost with the Skullshot tool in a city.](../files/SpookingOutScreenshot-2.png)
-![A player sitting on a bench alone in the lobby, a peaceful grassy field at night next to a forest with autumn leaves and a campfire.](../files/SpookingOutScreenshot-3.png)
+![Gameplay footage, showcasing the game's mechanics of catching ghosts and throwing them into the hole.](/blog/media/SpookingOutGameplay.mp4)
+![A player standing on a dirt pathway in a campsite surrounded by a forest, and ghosts.](/blog/media/SpookingOutScreenshot-1.png)
+![A player attacking a ghost with the Skullshot tool in a city.](/blog/media/SpookingOutScreenshot-2.png)
+![A player sitting on a bench alone in the lobby, a peaceful grassy field at night next to a forest with autumn leaves and a campfire.](/blog/media/SpookingOutScreenshot-3.png)
 
 # What is Novetus?
 
@@ -72,4 +72,5 @@ _Spooking Out!_ as well as the existing work from the original game took a lot o
 As I mentioned at the start, you can currently play it on Novetus. But what if you don't have a computer or simply don't wish to install Novetus? Well, we plan to **port the game to modern Roblox**, and it's being worked on right now! When it's done, I'll write another article to introduce the modern port and it's behind-the-scenes when it releases.
 
 Enjoy!
+
 _- Tobic Bay_
