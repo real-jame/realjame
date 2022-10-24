@@ -55,7 +55,7 @@ Novetus is Windows-exclusive, but it works well in Wine if you're on Linux. And 
 
 # Behind the scenes
 
-This game started because Tobu wanted to submit a game to a Halloween game contest in the Novetus Discord server. The best game will be included in the launcher's pre-installed map collection.
+This game started because Tobu wanted to submit a game to a Halloween game contest in the [Novetus Discord server](https://discord.gg/Jfrdmx3ZwQ). The best game will be included in the launcher's pre-installed map collection.
 
 We've been working on a game for about a month before that point, so our plan was to make it Halloween-themed. Brand new maps and a lobby, as well as a new challenge for the rounds - instead of simply picking up boxes, you have to first kill ghosts with a separate tool, while they're moving around. Development was pretty smooth because we were able to reuse the existing code for rounds, the shop, the Grab tool, and some shop items. - with a few modifications.
 
@@ -64,6 +64,8 @@ Tobu first created the original prototype of the game, he created the ghosts. I 
 Unlike the base game, where we wish to only include 2 or 3 maps and have the community build more maps, this game was on a lot shorter deadline, so I made just 1 map and the lobby, and the other maps are reused from classic Roblox games.
 
 We submitted it to the Novetus contest on October 22, and we got a couple players on the server. You can see them in the player list of the screenshots I provided, and it was a joy to finally share our work with the public!
+
+In fact, one of the players, [Lachrymogenic](https://lachrymogenic.gitlab.io), created a thumbnail for our game, which we've adopted as the logo and branding. Thank you so much!!!
 
 # Wrap-up
 
