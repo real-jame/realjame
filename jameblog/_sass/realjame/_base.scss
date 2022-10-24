@@ -123,7 +123,7 @@ a {
  */
 blockquote {
 	color: $grey-color;
-	border-left: 4px solid $grey-color-light;
+	border-left: 4px solid $grey-color;
 	padding-left: $spacing-unit / 2;
 	@include relative-font-size(1.125);
 	letter-spacing: -1px;
@@ -140,9 +140,9 @@ blockquote {
 pre,
 code {
 	@include relative-font-size(0.9375);
-	border: 1px solid $grey-color-light;
+	border: 1px solid $grey-color;
 	border-radius: 3px;
-	background-color: #444;
+	background-color: $grey-color;
 }
 
 code {
@@ -217,10 +217,10 @@ table {
 	text-align: $table-text-align;
 	color: lighten($text-color, 18%);
 	border-collapse: collapse;
-	border: 1px solid $grey-color-light;
+	border: 1px solid $grey-color;
 	tr {
 		&:nth-child(even) {
-			background-color: lighten($grey-color-light, 6%);
+			background-color: lighten($grey-color, 6%);
 		}
 	}
 	th,
@@ -228,11 +228,11 @@ table {
 		padding: ($spacing-unit / 3) ($spacing-unit / 2);
 	}
 	th {
-		background-color: lighten($grey-color-light, 3%);
-		border: 1px solid darken($grey-color-light, 4%);
-		border-bottom-color: darken($grey-color-light, 12%);
+		background-color: lighten($grey-color, 3%);
+		border: 1px solid darken($grey-color, 4%);
+		border-bottom-color: darken($grey-color, 12%);
 	}
 	td {
-		border: 1px solid $grey-color-light;
+		border: 1px solid $grey-color;
 	}
 }
