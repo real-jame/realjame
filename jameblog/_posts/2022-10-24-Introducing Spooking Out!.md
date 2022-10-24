@@ -63,6 +63,8 @@ Tobu first created the original prototype of the game, he created the ghosts. I 
 
 Unlike the base game, where we wish to only include 2 or 3 maps and have the community build more maps, this game was on a lot shorter deadline, so I made just 1 map and the lobby, and the other maps are reused from classic Roblox games.
 
+We submitted it to the Novetus contest on October 22, and we got a couple players on the server. You can see them in the player list of the screenshots I provided, and it was a joy to finally share our work with the public!
+
 # Wrap-up
 
 _Spooking Out!_ as well as the existing work from the original game took a lot of effort from both of us in all parts of development. We hope you enjoy playing it just as much we did making it!
