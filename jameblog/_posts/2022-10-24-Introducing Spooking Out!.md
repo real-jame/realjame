@@ -54,16 +54,22 @@ In order to join our server, make sure you download the current "Stable" release
 
 Novetus is Windows-exclusive, but it works well in Wine if you're on Linux. And if you're running into issues opening Novetus or 2010L, make sure you install the required dependencies (found in the "\_redist" or using the "Dependency Installer" tool in Novetus):
 
-- Microsoft Visual C++ Redistributables 2008 - this is required to run clients from 2008 and above.
-- Microsoft .NET Framework 4.0 - this is required for the Novetus launcher to run. (If you're on Linux, you don't need to install this. When running Novetus for the first time, Wine will prompt you to install Mono if you haven't already, so install that instead.)
-- .NET 4.0 Update (KB2468871) - this is required to run the Novetus launcher on Windows XP and Vista machines.
-  Speaking of which, this is unrelated to the game itself but if you are trying out Novetus and would like to play the 2007 or 2011+ clients, check the Dependency Installer to see what special dependencies you need to install to run them.
+- Microsoft Visual C++ Redistributables 2008
+  - Required to run clients from 2008 and above.
+- Microsoft .NET Framework 4.0
+  - Required for the Novetus launcher to run.
+- .NET 4.0 Update (KB2468871)
+  - Required to run the Novetus launcher on Windows XP and Vista machines.
+
+If you're on Linux, you don't need to install Microsoft .NET Framework 4.0. When running Novetus for the first time, Wine will prompt you to install Mono if you haven't already, so install that instead.
+
+Speaking of which, this is unrelated to our game but if you are trying out Novetus and would like to play the 2007 or 2011+ clients, check the Dependency Installer to see what special dependencies you need to install to run them.
 
 # Behind the scenes
 
 This game started because Tobu.fi wanted to submit a game to a Halloween game contest in the [Novetus Discord server](https://discord.gg/Jfrdmx3ZwQ). The best game will be included in the launcher's pre-installed map collection.
 
-We've been working on a game for about a month before that point, so our plan was to make it Halloween-themed. Brand new maps and a lobby, as well as a new challenge for the rounds - instead of simply picking up boxes, you have to first kill ghosts with a separate tool, while they're moving around. Development was pretty smooth because we were able to reuse the existing code for rounds, the shop, the Grab tool, and some shop items. - with a few modifications.
+We've been working on a game for about a month before that point, so our plan was to make it Halloween-themed. Brand new maps and a lobby, as well as a new challenge for the rounds - instead of simply picking up boxes, you have to first kill ghosts with a separate tool, while they're moving around. Development was pretty smooth because we were able to reuse the existing code for rounds, the shop, the Grab tool, and some shop items - with a few modifications.
 
 Tobu.fi first created the original prototype of the game, he created the ghosts. I took that prototype and merged it with the base game to create a fork of it. I reworked the scripts to accomodate what's changed.
 
