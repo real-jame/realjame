@@ -18,7 +18,7 @@
 	text-align: center;
 	// display: flex;
 	justify-content: center;
-	line-height: normal; // override to match realja.me
+	// line-height: normal; // override to match realja.me
 }
 
 .site-nav {
@@ -27,76 +27,21 @@
 	align-items: center;
 	justify-content: center;
 
-	.nav-trigger {
-		display: none;
-	}
-
-	.menu-icon {
-		display: none;
-	}
-
 	.page-link {
 		background-color: #444;
 		margin: 0 10px;
 		padding: 0.5em;
 		border-radius: 3px;
 
-		@media (max-width: 768px) {
+		@include media-query($small-screen) {
 			margin: 0 0.25em;
 			padding: 0.2em;
 		}
 	}
 
-	@include media-query($on-palm) {
-		position: absolute;
-		top: 9px;
-		right: $spacing-unit / 2;
-		background-color: $background-color;
-		border: 1px solid $grey-color;
-		border-radius: 5px;
-		text-align: right;
-
-		label[for="nav-trigger"] {
-			display: block;
-			float: right;
-			width: 36px;
-			height: 36px;
-			z-index: 2;
-			cursor: pointer;
-		}
-
-		.menu-icon {
-			display: block;
-			float: right;
-			width: 36px;
-			height: 26px;
-			line-height: 0;
-			padding-top: 10px;
-			text-align: center;
-
-			> svg {
-				fill: $grey-color;
-			}
-		}
-
-		input ~ .trigger {
-			clear: both;
-			display: none;
-		}
-
-		input:checked ~ .trigger {
-			display: block;
-			padding-bottom: 5px;
-		}
-
+	@include media-query($small-screen) {
 		.page-link {
-			display: block;
 			padding: 5px 10px;
-
-			&:not(:last-child) {
-				margin-right: 0;
-			}
-			margin-left: 20px;
 		}
 	}
 }
@@ -188,7 +133,7 @@
 	text-align: center;
 	font-weight: bold;
 
-	@include media-query($on-laptop) {
+	@include media-query($small-screen) {
 		@include relative-font-size(2.25);
 	}
 }
@@ -199,7 +144,7 @@
 	h2 {
 		@include relative-font-size(2);
 
-		@include media-query($on-laptop) {
+		@include media-query($small-screen) {
 			@include relative-font-size(1.75);
 		}
 	}
@@ -207,7 +152,7 @@
 	h3 {
 		@include relative-font-size(1.625);
 
-		@include media-query($on-laptop) {
+		@include media-query($small-screen) {
 			@include relative-font-size(1.375);
 		}
 	}
@@ -215,7 +160,7 @@
 	h4 {
 		@include relative-font-size(1.25);
 
-		@include media-query($on-laptop) {
+		@include media-query($small-screen) {
 			@include relative-font-size(1.125);
 		}
 	}

@@ -27,11 +27,10 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width: 80% !default;
 
-$on-palm: 800px !default;
-$on-laptop: 800px !default;
+$small-screen: 800px !default;
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-query($small-screen) {
 //   .wrapper {
 //     padding-right: $spacing-unit / 2;
 //     padding-left: $spacing-unit / 2;
