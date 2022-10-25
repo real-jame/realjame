@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Introducing Spooking Out!"
-categories: old-roblox project update
+categories: [Update, Old Roblox, Project]
 ---
 
-Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.
+Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.fi.
 ![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game, a bay filled with ghosts.](/blog/media/SpookingOutThumbnail.png)
 Come play the game with us on a 24/7 server I'm hosting for the game, or [download a copy of the game for yourself](https://cdn.discordapp.com/attachments/1033943226727542887/1033943288463511692/Spooking_Out.rbxl).
 
@@ -28,16 +28,22 @@ _Spooking Out!_ is a round based co-op game about catching ghosts. When the roun
 
 After you deplete the ghost's health, switch to the Grab tool and click on it. You'll pick it up, now walk to the big hole and click again to throw it in! You can hold down the letting-go click to charge up your shot and throw it a farther distance.
 
-Work together with your team to capture all the ghosts before time runs out. In the lobby, spend your hard-earned tickets in the shop to buy secondary items.
+Work together with everyone in the server to capture all the ghosts before time runs out. In the lobby, spend your hard-earned tickets in the shop to buy secondary items.
 
 Speaking of which, secondary items! You can choose a 2nd item to equip alongside your Skullshot. This tool or ability can help you and your team out, so try all of them to find your favorite!
 
 # Screenshots
 
 _Sorry for the black bar on the bottom, I didn't record it correctly. In that area would be a status bar telling you the amount of ghosts left and when the next round will start._
-![Gameplay footage, showcasing the game's mechanics of catching ghosts and throwing them into the hole.](/blog/media/SpookingOutGameplay.mp4)
+
+<video height="320" width="480" controls>
+  <source src="/blog/media/SpookingOutGameplay.mp4" type="video/mp4">
+</video>
+
 ![A player standing on a dirt pathway in a campsite surrounded by a forest, and ghosts.](/blog/media/SpookingOutScreenshot-1.png)
+
 ![A player attacking a ghost with the Skullshot tool in a city.](/blog/media/SpookingOutScreenshot-2.png)
+
 ![A player sitting on a bench alone in the lobby, a peaceful grassy field at night next to a forest with autumn leaves and a campfire.](/blog/media/SpookingOutScreenshot-3.png)
 
 # What is Novetus?
@@ -55,11 +61,11 @@ Novetus is Windows-exclusive, but it works well in Wine if you're on Linux. And 
 
 # Behind the scenes
 
-This game started because Tobu wanted to submit a game to a Halloween game contest in the [Novetus Discord server](https://discord.gg/Jfrdmx3ZwQ). The best game will be included in the launcher's pre-installed map collection.
+This game started because Tobu.fi wanted to submit a game to a Halloween game contest in the [Novetus Discord server](https://discord.gg/Jfrdmx3ZwQ). The best game will be included in the launcher's pre-installed map collection.
 
 We've been working on a game for about a month before that point, so our plan was to make it Halloween-themed. Brand new maps and a lobby, as well as a new challenge for the rounds - instead of simply picking up boxes, you have to first kill ghosts with a separate tool, while they're moving around. Development was pretty smooth because we were able to reuse the existing code for rounds, the shop, the Grab tool, and some shop items. - with a few modifications.
 
-Tobu first created the original prototype of the game, he created the ghosts. I took that prototype and merged it with the base game to create a fork of it. I reworked the scripts to accomodate what's changed.
+Tobu.fi first created the original prototype of the game, he created the ghosts. I took that prototype and merged it with the base game to create a fork of it. I reworked the scripts to accomodate what's changed.
 
 Unlike the base game, where we wish to only include 2 or 3 maps and have the community build more maps, this game was on a lot shorter deadline, so I made just 1 map and the lobby, and the other maps are reused from classic Roblox games.
 

@@ -8,19 +8,12 @@ title: "Posts"
 
   {{ content }}
 
-  <!-- <div id="categories">
-    <h2>Articles by category...</h2>
-    {% for category in site.categories %}
-      <a class="category-button" href="">{{ category | first }}</a>
-    {% endfor %}
-  </div> -->
   <p>
 		List all posts by: <a href="categories.html">category</a> /
 		<a href="list.html">date</a>
 	</p>
 
   {%- if site.posts.size > 0 -%}
-    <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
