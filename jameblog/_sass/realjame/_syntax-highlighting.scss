@@ -2,11 +2,18 @@
  * Syntax highlighting styles
  */
 .highlight {
-	background: $gray-color;
+	background: $code-background-color;
 	@extend %vertical-rhythm;
 
+	@include light-mode() {
+		background-color: $code-background-color-light;
+	}
+
 	.highlighter-rouge & {
-		background: $gray-color;
+		background: $code-background-color;
+		@include light-mode() {
+			background-color: $code-background-color-light;
+		}
 	}
 
 	.c {
