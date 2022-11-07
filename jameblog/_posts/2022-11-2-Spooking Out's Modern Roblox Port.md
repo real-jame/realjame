@@ -2,6 +2,7 @@
 layout: post
 title: "Spooking Out's Modern Roblox Port"
 categories: [Update, Roblox, Project]
+image: /blog/media/SpookingOutThumbnail.png
 ---
 
 Hey everyone, I am proud to announce the modern Roblox port of _Spooking Out!_ has been published to the Roblox website under our group!
