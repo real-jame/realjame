@@ -19,19 +19,31 @@
 	// display: flex;
 	justify-content: center;
 	// line-height: normal; // override to match realja.me
+
+	@include light-mode() {
+		color: $text-color-light;
+	}
 }
 
 .site-nav {
-	background-color: #333;
+	background-color: $content-background-color;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
+	@include light-mode() {
+		background-color: $content-background-color-light;
+	}
+
 	.page-link {
-		background-color: #444;
+		background-color: $nav-button-background-color;
 		margin: 0 10px;
 		padding: 0.5em;
 		border-radius: 3px;
+
+		@include light-mode() {
+			background-color: $nav-button-background-color-light;
+		}
 
 		@include media-query($small-screen) {
 			margin: 0 0.25em;
@@ -50,10 +62,14 @@
  * Site footer
  */
 .site-footer {
-	background-color: #333;
+	background-color: $content-background-color;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@include light-mode() {
+		background-color: $content-background-color-light;
+	}
 
 	@media (max-width: 768px) {
 		// flex-direction: column;
@@ -68,10 +84,14 @@
 .site-footer a {
 	width: auto;
 	padding: 1em;
-	background-color: #444;
+	background-color: $nav-button-background-color;
 	margin: 0 10px;
 	border-radius: 3px;
 	white-space: nowrap;
+
+	@include light-mode() {
+		background-color: $nav-button-background-color-light;
+	}
 
 	@media (max-width: 768px) {
 		margin: 0 0.25em;
@@ -83,8 +103,12 @@
  * Page content
  */
 .page-content {
-	background-color: #333;
+	background-color: $content-background-color;
 	padding: 1em;
+
+	@include light-mode() {
+		background-color: $content-background-color-light;
+	}
 }
 
 .page-heading {
@@ -110,7 +134,7 @@
 
 .post-meta {
 	font-size: $small-font-size;
-	color: $grey-color;
+	color: $gray-color;
 	text-align: center;
 }
 

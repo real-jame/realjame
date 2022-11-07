@@ -19,6 +19,10 @@ body {
 	@include media-query($small-screen) {
 		width: 90%;
 	}
+	@include light-mode() {
+		color: $text-color-light;
+		background-color: $background-color-light;
+	}
 }
 
 /**
@@ -116,9 +120,17 @@ a {
 	color: $brand-color;
 	text-decoration: none;
 
+	@include light-mode() {
+		color: $brand-color-light;
+	}
+
 	&:hover {
 		color: $text-color;
 		text-decoration: underline;
+
+		@include light-mode() {
+			color: $text-color-light;
+		}
 	}
 
 	.social-media-list &:hover {
@@ -134,8 +146,8 @@ a {
  * Blockquotes
  */
 blockquote {
-	color: $grey-color;
-	border-left: 4px solid $grey-color;
+	color: $gray-color;
+	border-left: 4px solid $gray-color;
 	padding-left: $spacing-unit / 2;
 	@include relative-font-size(1.125);
 	letter-spacing: -1px;
@@ -152,9 +164,9 @@ blockquote {
 pre,
 code {
 	@include relative-font-size(0.9375);
-	border: 1px solid $grey-color;
+	border: 1px solid $gray-color;
 	border-radius: 3px;
-	background-color: $grey-color;
+	background-color: $gray-color;
 }
 
 code {
@@ -209,7 +221,7 @@ pre {
 	width: 16px;
 	height: 16px;
 	display: inline-block;
-	fill: #{$grey-color};
+	fill: #{$gray-color};
 	padding-right: 5px;
 	vertical-align: text-top;
 }
@@ -229,10 +241,13 @@ table {
 	text-align: $table-text-align;
 	color: lighten($text-color, 18%);
 	border-collapse: collapse;
-	border: 1px solid $grey-color;
+	border: 1px solid $gray-color;
+	@include light-mode() {
+		color: lighten($text-color-light, 18%);
+	}
 	tr {
 		&:nth-child(even) {
-			background-color: lighten($grey-color, 6%);
+			background-color: lighten($gray-color, 6%);
 		}
 	}
 	th,
@@ -240,11 +255,11 @@ table {
 		padding: ($spacing-unit / 3) ($spacing-unit / 2);
 	}
 	th {
-		background-color: lighten($grey-color, 3%);
-		border: 1px solid darken($grey-color, 4%);
-		border-bottom-color: darken($grey-color, 12%);
+		background-color: lighten($gray-color, 3%);
+		border: 1px solid darken($gray-color, 4%);
+		border-bottom-color: darken($gray-color, 12%);
 	}
 	td {
-		border: 1px solid $grey-color;
+		border: 1px solid $gray-color;
 	}
 }

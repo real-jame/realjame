@@ -14,13 +14,22 @@ $spacing-unit: 30px !default;
 $text-color: #eee !default;
 $text-color-light: #333 !default;
 
+// $link-color: lightblue !default;
+// $link-color-light: #30829c !default;
+
 $background-color: #222 !default;
 $background-color-light: #eee !default;
 
-$brand-color: lightblue !default;
+$content-background-color: #333 !default;
+$content-background-color-light: #ddd !default;
 
-$grey-color: #bbb !default;
-$grey-color-light: gray !default;
+$nav-button-background-color: #444 !default;
+$nav-button-background-color-light: #bbb !default;
+
+$brand-color: lightblue !default;
+$brand-color-light: #30829c !default;
+
+$gray-color: #888 !default;
 
 $table-text-align: left !default;
 
@@ -42,16 +51,14 @@ $small-screen: 800px !default;
 	}
 }
 
-@mixin relative-font-size($ratio) {
-	font-size: $base-font-size * $ratio;
+@mixin light-mode() {
+	@media screen and (prefers-color-scheme: light) {
+		@content;
+	}
 }
 
-@media (prefers-color-scheme: light) {
-	$text-color: #333;
-	$brand-color: #30829c;
-	$background-color: #eee;
-	// --nav-background-color: #ddd;
-	// --nav-button-background-color: #bbb;
+@mixin relative-font-size($ratio) {
+	font-size: $base-font-size * $ratio;
 }
 
 // Import partials.
