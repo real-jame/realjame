@@ -109,7 +109,7 @@ Now here's after my redesign.
 
 ![A mobile screenshot with the menu buttons positioned vertically on the left center side of the screen and the charge UI placed neatly above the tools list.](/blog/media/SpookingOutModernGuiAfter.png)
 
-![A screenshot of the menu buttons, with a controller ]
+![A screenshot of the menu buttons, with a controller](/blog/media/SpookingOutModernControllerIndicators.png)
 
 - Moved menu buttons to the center left side of the screen
 - Made the charge gui bigger and positioned higher up to not overlap with the tools menu on mobile
@@ -132,7 +132,9 @@ Of course, I could have worked more. I could have ported it to [ContextActionSer
 
 Here's how everything came together, allowing me to play our game on modern Roblox, on my phone!
 
-![A 15-second gameplay recording of Spooking Out's modern port, recorded on an Android phone. In the video, a player knocks out a ghost with the Skullshot and throws it into the hole.](/blog/media/SpookingOutModernGameplay.mp4)
+<video height="320" width="480" controls>
+  <source src="/blog/media/SpookingOutModernGameplay.mp4" type="video/mp4">
+</video>
 
 I've tried making modern Roblox projects before, but like with old Roblox, this is my first time releasing a finished product. All in all, it was fun. We hope you continue enjoying it just as much as we did porting it!
 
