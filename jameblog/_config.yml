@@ -21,11 +21,11 @@
 title: realjame - blog
 email: james@realja.me
 description: >- # this means to ignore newlines until "baseurl:"
-  My writings and stuff.
+  I post my writings, announcements, and other stuff here.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://realja.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: real__jame
-# github_username: atomicchocolate
+# github_username: real-jame
 
 # Build settings
 plugins:
