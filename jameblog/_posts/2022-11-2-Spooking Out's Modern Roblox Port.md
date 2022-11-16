@@ -13,7 +13,7 @@ This means you can now play our game on modern Roblox. Oh, and we also went back
 
 # [Play it here!](https://www.roblox.com/games/11373614692/Spooking-Out)
 
-_[Or check out the Novetus 2010L version!](blog/update/old roblox/project/2022/10/24/Introducing-Spooking-Out!.html)_
+_[Or check out the Novetus 2010L version!]({{ site.baseurl }}{% post_url 2022-10-24-Introducing Spooking Out!.md %})_
 
 There are also 5 badges -- essentially, achievements. Here's one of them:
 
