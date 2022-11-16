@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Spooking Out!"
-categories: [Update, Old Roblox, Project]
+categories: [Update, Old-Roblox, Project]
 image: /blog/media/SpookingOutThumbnail.png
 ---
 
