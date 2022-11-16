@@ -7,7 +7,7 @@ image: /blog/media/SpookingOutThumbnail.png
 
 Hey everyone, I am proud to announce the modern Roblox port of _Spooking Out!_ has been published to the Roblox website under our group!
 
-_Don't know about Spooking Out or Tobic Bay? Read the [previous article](https://realja.me/blog/update/old%20roblox/project/2022/10/24/Introducing-Spooking-Out!.html)._
+_Don't know about Spooking Out or Tobic Bay? Read the [previous article]({{ site.baseurl }}{% post_url 2022-10-24-Introducing Spooking Out!.md %})._
 
 This means you can now play our game on modern Roblox. Oh, and we also went back and improved the experience to make playing it on mobile, controller, and Xbox just as playable and fun!
 
