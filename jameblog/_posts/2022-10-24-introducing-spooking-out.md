@@ -3,6 +3,7 @@ layout: post
 title: "Introducing Spooking Out!"
 categories: [Update, Old-Roblox, Project]
 image: /blog/media/SpookingOutThumbnail.png
+date: 2022-10-24
 ---
 
 Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.fi.
