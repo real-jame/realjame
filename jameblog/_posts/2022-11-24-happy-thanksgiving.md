@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Happy Thanksgiving!"
+categories: [Personal]
+image: /blog/media/OldRoblox2010Thanksgiving.png
+date: 2022-11-24
+---
+
+| ![Old Roblox screenshot of some players next to a turkey, outside of a house in the autumn fields.](/blog/media/OldRoblox2010Thanksgiving.png) |
+| :--------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                   A "turkey"                                                                   |
