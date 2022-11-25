@@ -10,7 +10,7 @@ RUN chmod 777 /blog
 RUN jekyll build
 
 # Serve core site and blog with nginx
-FROM nginx
+FROM nginx:stable-alpine
 
 COPY ./src /usr/share/nginx/html
 COPY --from=jekyll-build /blog/_site /usr/share/nginx/html/blog
