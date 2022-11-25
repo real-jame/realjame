@@ -26,7 +26,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://realja.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: real__jame
 # github_username: real-jame
-permalink: /:title
+permalink: /:title.html
 
 # Build settings
 plugins:
