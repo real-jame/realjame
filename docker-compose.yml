@@ -1,14 +1,15 @@
 version: "3.8"
 services:
-  website:
-    build: .
-    container_name: realja.me
-    ports:
-      - 1000:80
-      - 1001:443
+  jekyll:
+    image: jekyll/jekyll:latest
     environment:
+      - JEKYLL_ENV=production
       - JEKYLL_UID=1000
       - JEKYLL_GID=1000
-    # volumes:
-    #   - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    command: jekyll serve --watch --force_polling --verbose
+    container_name: realja.me
+    ports:
+      - 1000:4000
+    volumes:
+      - ./src:/srv/jekyll
     restart: unless-stopped

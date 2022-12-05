@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on realjame</title>
+    <link>https://realja.me/categories/Personal/</link>
+    <description>Recent content in Personal on realjame</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://realja.me/categories/Personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Happy Thanksgiving!</title>
+      <link>https://realja.me/post/2022-11-24-happy-thanksgiving/</link>
+      <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://realja.me/post/2022-11-24-happy-thanksgiving/</guid>
+      <description>        A &amp;ldquo;turkey&amp;rdquo;    </description>
+    </item>
+    
+  </channel>
+</rss>

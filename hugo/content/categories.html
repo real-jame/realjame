@@ -1,0 +1,40 @@
+---
+type: page
+title: "Posts by Category"
+aliases:
+    - /categories
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h2 class="page-heading">{{ page.title }}</h1>
+
+    <p>
+      List all posts by:
+      <a href="categories.html">category</a>
+      /
+      <a href="list.html">date</a>
+    </p>
+
+  {%- endif -%}
+  {%- if site.posts.size > 0 -%}
+    <ul>
+      {% for category in site.categories %}
+        <li>
+          <b name="{{ category | first }}">{{ category | first }}</b>
+          <ul>
+            {% for post in category.last %}
+              <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d
+                  %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                –
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  {%- endif -%}
+</div>
