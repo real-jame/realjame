@@ -12,7 +12,29 @@ title: "realja.me"
 
   <h2>Recent Posts</h2>
 
+  {%- if site.posts.size > 0 -%}
+    <p class="rss-subscribe">subscribe
+      <a href="{{ "/feed.xml" | relative_url }}">via RSS!</a>
+    </p>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | "" }}
+          </a>
+          {%- if post.description -%}
+            {{ post.description }}
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+    {%- comment -%}
+      TODO make it only show the last 3 or 5 and make it more compact
+    {%- endcomment -%}
 
+  {%- endif -%}
 
   <h2>Quick Links</h2>
 

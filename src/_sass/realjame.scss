@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+	"Lucida Sans", Arial, sans-serif !default;
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit: 30px !default;
+
+$text-color: #eee !default;
+$text-color-light: #333 !default;
+
+// $link-color: lightblue !default;
+// $link-color-light: #30829c !default;
+
+$background-color: #222 !default;
+$background-color-light: #eee !default;
+
+$content-background-color: #333 !default;
+$content-background-color-light: #ddd !default;
+
+$nav-button-background-color: #444 !default;
+$nav-button-background-color-light: #ccc !default;
+
+$brand-color: lightblue !default;
+$brand-color-light: #30829c !default;
+
+$code-background-color: #444 !default;
+$code-background-color-light: #ccc !default;
+
+$gray-color: #888 !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width: 80% !default;
+
+$small-screen: 800px !default;
+
+// Use media queries like this:
+// @include media-query($small-screen) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}
+
+@mixin light-mode() {
+	@media screen and (prefers-color-scheme: light) {
+		@content;
+	}
+}
+
+@mixin relative-font-size($ratio) {
+	font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import "realjame/base", "realjame/layout", "realjame/syntax-highlighting";

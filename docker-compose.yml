@@ -6,7 +6,7 @@ services:
       - JEKYLL_ENV=production
       - JEKYLL_UID=1000
       - JEKYLL_GID=1000
-    command: jekyll serve --watch --force_polling --verbose
+    command: jekyll serve --verbose
     container_name: realja.me
     ports:
       - 1000:4000
