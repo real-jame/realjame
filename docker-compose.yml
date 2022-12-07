@@ -11,5 +11,5 @@ services:
     ports:
       - 1000:4000
     volumes:
-      - ./src:/srv/jekyll
+      - ./src:/srv/jekyll:rw
     restart: unless-stopped

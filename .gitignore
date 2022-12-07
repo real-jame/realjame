@@ -5,5 +5,5 @@ _site
 vendor
 *.gem
 .bundle
-Gemfile.lock
+# Gemfile.lock
 *.code-workspace
