@@ -14,4 +14,4 @@ RUN jekyll build
 # Serve with nginx
 FROM nginx:stable-alpine
 
-COPY --from=jekyll-build /website/_site /usr/share/nginx/html
+COPY --from=jekyll-build /website/_site /etc/nginx/html
