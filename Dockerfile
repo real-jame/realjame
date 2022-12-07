@@ -7,6 +7,8 @@ COPY ./src /website
 
 RUN chmod 777 /website
 
+RUN bundle install
+
 RUN jekyll build
 
 # Serve with nginx
