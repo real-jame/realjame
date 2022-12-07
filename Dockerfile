@@ -1,16 +1,13 @@
-# Build Jekyll blog
+# Build Jekyll
 FROM jekyll/jekyll:4.2.2 AS jekyll-build
 
-WORKDIR /blog
+WORKDIR /website
 
-COPY ./jameblog /blog
-
-RUN chmod 777 /blog
+RUN chmod 777 /website
 
 RUN jekyll build
 
-# Serve core site and blog with nginx
+# Serve with nginx
 FROM nginx:stable-alpine
 
-COPY ./src /usr/share/nginx/html
-COPY --from=jekyll-build /blog/_site /usr/share/nginx/html/blog
+COPY --from=jekyll-build /website/_site /usr/share/nginx/html
