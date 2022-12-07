@@ -9,6 +9,6 @@ services:
     environment:
       - JEKYLL_UID=1000
       - JEKYLL_GID=1000
-    # volumes:
-    #   - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     restart: unless-stopped
