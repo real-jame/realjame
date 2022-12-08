@@ -12,6 +12,6 @@ RUN bundle install
 RUN jekyll build
 
 # Serve with nginx
-FROM nginx:stable-alpine
+FROM nginx
 
 COPY --from=jekyll-build /website/_site /etc/nginx/html
