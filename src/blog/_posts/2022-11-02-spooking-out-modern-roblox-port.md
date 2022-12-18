@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spooking Out's Modern Roblox Port"
-categories: [Update, Roblox, Project]
+categories: [Roblox, Project]
 image: /blog/media/SpookingOutThumbnail.png
 description: "Spooking Out has been ported to modern Roblox!"
 date: 2022-11-02

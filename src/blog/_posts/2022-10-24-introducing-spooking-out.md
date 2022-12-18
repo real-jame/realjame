@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Spooking Out!"
-categories: [Update, Old-Roblox, Project]
+categories: [Old-Roblox, Project]
 image: /blog/media/SpookingOutThumbnail.png
 description: "I made a brand new game for old Roblox with the help of a friend!"
 date: 2022-10-24
