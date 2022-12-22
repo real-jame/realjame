@@ -9,7 +9,7 @@ RUN chmod 777 /website
 
 RUN bundle install
 
-RUN jekyll build
+RUN jekyll build --future
 
 # Serve with nginx
 FROM nginx
