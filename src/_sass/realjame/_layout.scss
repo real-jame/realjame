@@ -6,9 +6,16 @@
 
 	// Positioning context for the mobile navigation icon
 	position: relative;
+	margin-top: 1em;
 }
 
-.site-title {
+.page-title {
+	border-radius: 10px 10px 0 0;
+    outline: solid white 1px;
+	background-color: #272727;
+}
+
+.page-title {
 	// @include relative-font-size(1.8);
 	color: $text-color;
 	// font-weight: bold;
@@ -26,13 +33,15 @@
 }
 
 .site-nav {
-	background-color: $content-background-color;
+	background-color: $nav-background-color;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
+	border: solid white 1px;
+
 	@include light-mode() {
-		background-color: $content-background-color-light;
+		background-color: $nav-background-color-light;
 	}
 
 	.page-link {
@@ -61,11 +70,28 @@
 /**
  * Site footer
  */
+.button-row {
+	text-align: center;
+	list-style: none;
+}
+
+.button-row a {
+	display: inline-block;
+}
+
+.button-row a img {
+	width: auto;
+}
+
 .site-footer {
 	background-color: $content-background-color;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	border-style: none solid solid;
+	border-color: white;
+	border-width: 1px;
 
 	@include light-mode() {
 		background-color: $content-background-color-light;
@@ -103,8 +129,12 @@
  * Page content
  */
 .page-content {
-	background-color: $content-background-color;
+	background-color: rgba($content-background-color, 0.95);
 	padding: 1em;
+
+	border-style: none solid;
+	border-color: white;
+	border-width: 1px;
 
 	@include light-mode() {
 		background-color: $content-background-color-light;
@@ -141,6 +171,35 @@
 .post-link {
 	display: block;
 	@include relative-font-size(1.5);
+}
+
+/**
+ * Blog index
+ */
+.tagcloud {
+	// border-radius: 10px;
+	// border: solid 1px;
+	// border-style: dashed;
+	margin: 0.5em;
+	margin-bottom: 1em;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+
+	li {
+		display: inline-block;
+		padding: 1%;
+		border: solid 1px;
+		border-radius: 10px;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
 /**
@@ -181,6 +240,7 @@
 		}
 	}
 
+	
 	h4 {
 		@include relative-font-size(1.25);
 

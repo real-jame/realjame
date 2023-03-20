@@ -1,7 +1,8 @@
 ---
 layout: post
+section: news
 title: "I'm Working On Cool Stuff"
-categories: [Web, Old-Roblox, Project]
+tags: [News, Web, Roblox]
 description: "2 cool web projects are in the works - textarea.site, and an fxtwitter clone for Reddit links. Plus, some ideas for classic roblox things."
 date: 2022-12-21
 ---

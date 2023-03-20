@@ -4,11 +4,9 @@ title: "realja.me"
 ---
 
 <div class="home">
-  <h2>About Me</h2>
-
-  <p>Welcome to my personal website, I'm James. I believe the web should be full of passion and creativity! This website is a step in that direction.</p>
-  <p>My blog has (or will have) all sorts of reviews, opinions, information, guides, and more so hopefully people can learn these things from an actual person and not a corporation or bot.</p>
-  <p>I have some cool stuff in the works, check out what's available now below.</p>
+  <p class="text-focus">
+    <i>realjame: Always under construction, never working, always sleeping...</i>
+  </p>
 
   <h2>Recent Posts</h2>
 
@@ -17,7 +15,7 @@ title: "realja.me"
       <a href="{{ "/feed.xml" | relative_url }}">via RSS!</a>
     </p>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit: 3 -%}
         <li>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -30,31 +28,67 @@ title: "realja.me"
         </li>
       {%- endfor -%}
     </ul>
-    {%- comment -%}
-      TODO make it only show the last 3 or 5 and make it more compact
-    {%- endcomment -%}
 
   {%- endif -%}
+
+  <hr>
 
   <h2>Quick Links</h2>
 
   <dl>
     <dt>
-      <img src="assets/icons/textarea.ico" alt="Textarea.site icon" class="icon"/>
+      <img
+        src="https://wiki.realja.me/images/favicon.ico"
+        alt="Old Roblox Wiki icon"
+        class="icon" />
+      <a href="https://wiki.realja.me">Old Roblox Wiki/Documentation</a>
+    </dt>
+    <dd>A rehosting of the Roblox Wiki from 2012, expanded with updated documentation and resources to help people make new games for classic clients in 2023.</dd>
+    <dt>
+      <img
+        src="assets/icons/textarea.ico"
+        alt="Textarea.site icon"
+        class="icon" />
       <a href="https://textarea.site">textarea.site</a>
     </dt>
     <dd>A simple textbox to instantly start writing.</dd>
     <dt>
-      <img src="assets/icons/spookingout.png" alt="Spooking Out icon" class="icon"/>
+      <img
+        src="assets/icons/spookingout.png"
+        alt="Spooking Out icon"
+        class="icon" />
       <a href="{% post_url 2022-10-24-introducing-spooking-out %}">Spooking Out!</a>
     </dt>
     <dd>A game made for the 2010 Roblox engine about catching ghosts.
       <a href="{% post_url 2022-11-02-spooking-out-modern-roblox-port %}">There's a port to modern Roblox too!</a>
     </dd>
     <dt>
-      <img src="assets/icons/github.png" alt="GitHub icon" class="icon"/>
+      <img
+        src="assets/icons/github.png"
+        alt="GitHub icon"
+        class="icon" />
       <a href="https://github.com/real-jame">My GitHub</a>
     </dt>
-    <dd>Has more software and projects.</dd>
+    <dt>
+      <img
+        src="assets/icons/twitter.png"
+        alt="Twitter icon"
+        class="icon" />
+      <a href="https://twitter.com/real__jame">Follow me on Twitter!</a>
+      <a href="https://wetdry.world/@jame">(Or Mastodon!)</a>
+    </dt>
   </dl>
+
+  <hr>
+
+  <h2>About Me</h2>
+
+  <i>This is the website of "realjame", AKA James, a programmer with some finished projects and a mountain of unfinished ones.</i>
+
+  <p>I'm primarily known for old Roblox stuff - making new games in decade-old versions of the Roblox client, or otherwise supporting such efforts. This is only the beginning. I also do general programming, currently only web development, but I am interested in other fields such as homebrew software.</p>
+
+  <p>The blog is the main part of this site. I probably left out a couple things I've written about, after all.
+    <a href="/blog">Care to take a read?</a>
+  </p>
 </div>
+{% include buttonrow.html %}

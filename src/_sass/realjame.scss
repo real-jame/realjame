@@ -1,30 +1,61 @@
 @charset "utf-8";
+@font-face {
+	font-family: "Open Sans";
+	font-weight: normal;
+	src: url(/assets/fonts/OpenSans/OpenSans-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: "PT Sans";
+	font-weight: normal;
+	src: url(/assets/fonts/PT_Sans/PTSans-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: "PT Sans Bold";
+	font-weight: bold;
+	src: url(/assets/fonts/PT_Sans/PTSans-Bold.ttf) format("truetype");
+}
+@font-face {
+	font-family: "PT Sans Italic";
+	font-weight: bold;
+	src: url(/assets/fonts/PT_Sans/PTSans-Italic.ttf) format("truetype");
+}
+@font-face {
+	font-family: "PT Sans Bold Italic";
+	font-weight: bold;
+	src: url(/assets/fonts/PT_Sans/PTSans-BoldItalic.ttf) format("truetype");
+}
 
 // Define defaults for each variable.
 
-$base-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-	"Lucida Sans", Arial, sans-serif !default;
-$base-font-size: 16px !default;
+$base-font-family: "PT Sans", sans-serif;
+// $base-font-family: "Open Sans", serif;
+// $base-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+// 	"Lucida Sans", Arial, sans-serif !default;
+$base-font-size: 20px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit: 30px !default;
 
-$text-color: #eee !default;
+$text-color: #cafffa !default;
 $text-color-light: #333 !default;
 
 // $link-color: lightblue !default;
 // $link-color-light: #30829c !default;
 
+// unused due to image
 $background-color: #222 !default;
-$background-color-light: #eee !default;
+$background-color-light: #bbb !default;
 
-$content-background-color: #333 !default;
-$content-background-color-light: #ddd !default;
+$content-background-color: #1b2a35 !default;
+$content-background-color-light: #ccc !default;
+
+$nav-background-color: #222 !default;
+$nav-background-color-light: #bbb !default;
 
 $nav-button-background-color: #444 !default;
-$nav-button-background-color-light: #ccc !default;
+$nav-button-background-color-light: #bbb !default;
 
 $brand-color: lightblue !default;
 $brand-color-light: #30829c !default;

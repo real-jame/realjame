@@ -1,7 +1,8 @@
 ---
 layout: post
+section: news
 title: "Happy Thanksgiving!"
-categories: [Personal]
+tags: [Personal]
 image: /blog/media/OldRoblox2010Thanksgiving.png
 description: "🦃"
 date: 2022-11-24
