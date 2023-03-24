@@ -27,15 +27,21 @@ Hey there. It's been months since my last article, but I'm finally back. First, 
 
 It looks a bit prettier now, don't it? I have a soft spot for websites with a tiled background, as long as it's pleasing. I'm still seeking a good one, so don't be frightened if it changes the next day you check this site.
 
-The content of the website itself is a slight bit more colorful, with a bluish tint to the text, white borders, and a rounded black edge to the header (shamelessly copied from GNOME). The title now displays the title of the page, not just "realja.me". So that's nice!
+The content of the website itself is a slight bit more colorful, with a bluish tint to the text, white borders, and a rounded black edge to the header (shamelessly copied from GNOME). The title now displays the title of the page, not just "realja.me". And the website's font is also bigger, so hopefully you won't need to zoom in for a better experience.
+
+The website finally has a favicon (that little icon next to this website's tab in your browser). It's the symbol on various Roblox brand imagery throughout the site, such as concept art, badges, and most notably the ["Bloxxer Cap" hat](https://www.roblox.com/catalog/51353039/Bloxxer-Cap), which my Roblox character has owned and worn for over 10 years now.
 
 Blog pages no longer use fancy symbols for quotes and ellipses. Nobody was complaining before, but I think this was a good idea so it's easier to copy and paste excerpts of my blog posts. What I mean basically, is that quotes now show up as `"` and not the pair of rounded quotes, `“` `”`. Single quotes too, `'` instead of `‘` `’`. And for ellipses, `...` (3 periods) instead of `…`.
 
-The [home page](/) has some good old 88x31 buttons just above the footer at the bottom that link to my favorite sites. They're either my inspiration, invaluable resources for creating a website, or are just really cool all in all. [My buddy Nick64 has an awesome site, check that one out especially.](https://nick64.me)
+The website is also on [wiby.me](https://wiby.me) now. If you don't know what Wiby is, I should write a blog post about it, but in sum it's a search engine for Web 1.0 websites. Pages are submitted manually so I'm gonna start submitting my website's pages to there. I've already had the home page on Wiby for a while now.
+
+The [home page](/) has been shuffled around a bit. The Recent Posts section is on top (because that may be why you're checking regularly unless you're cool and use [RSS](/feed.xml)), then Quick Links, then the About Me at the bottom.
+
+I also added some good old 88x31 buttons to the home page, they link to my favorite personal sites. They're either my inspiration, invaluable resources for creating a website, or are just really cool all in all. [My good friend Nick64 has an awesome site, check that one out especially.](https://nick64.me)
 
 And by the way... I MADE A BUTTON FOR THE SITE! `TODO TODO TODO`
 
-Also, the [blog index page](/blog) has a "tag cloud", so you can filter by specific topics. I kinda had filtering before, but it was a lot more unwieldy to use. Plus, in the near future there will be many blog posts, so filtering might be actually helpful!
+Also, the [blog index page](/blog) has a "tag cloud" so you can filter by specific topics. I kinda had filtering before but it was a lot more unwieldy to use. Plus, there will be a lot more blog posts in the near future, so filtering will be useful!
 
 ## Future blog posts?
 
@@ -47,7 +53,7 @@ Here's the topics I guaranteed want to make into blog posts (I'll update them in
 - The beginning of and being invited to the Novetus Creative Team (making old Roblox games "in-house" for the launcher as a small team)
 - A modern Roblox project I spent a lot of time working on in 2021 but gave up on
 - A 2nd failed project for modern Roblox that came before it
-- My thoughts on something I've been thinking of acquiring for a while, it's mentioned in this article [if you want to spoil the surprise...?](#one-more-thing)
+- My thoughts on something I've been thinking of acquiring for a while, it's mentioned in this article [(if you want to spoil the surprise...?)](#one-more-thing)
 
 ## Welcome back...
 
@@ -57,9 +63,25 @@ What I'm saying is that I need to snap back and start being regularly productive
 
 I also am reducing screen time usage on my phone, and the biggest thing is keeping my phone in a different room when I go to sleep, so I don't immediately pull it out when I wake up.
 
-Last thing is going on a short walk daily on my free days off to take breaks from looking at screens, and reading books as well. I might post book reviews, basically just my thoughts on books right after finishing it (with no background knowledge on the book or how it was reviewed/critiqued by others). I've found some interesting books at the library and various thrift stores.
+Last thing is going on a short walk daily on my free days off to take breaks from looking at screens, and reading books as well. I plan to post book reviews, basically just my thoughts on books right after finishing it (with no background knowledge on the book or how it was reviewed/critiqued by others). I've found some interesting books at the library and various thrift stores.
 
 `TODO image of some books I'm working on reading - Coyote Waits, 1984, Catcher in the Rye`
+
+I'm also reading some self-help books and other non-fiction too. **My current backlog is:**
+
+- Coyote Waits by
+- 1984 by George Orwell
+- Catcher in the Rye by
+- How to Read a Book by , audiobook voiced by
+- Make It Stick by
+- Annihilation by Jeff Vandermeer
+- C# 10 in a Nutshell by Joseph Albahari
+- Four Thousand Weeks: Time Management for Mere Mortals by
+- Deep Work by
+- How to Win Friends and Influence People by
+- Atomic Habits by
+
+I think making a new section of the site as a list of all these books (and games, shows, movies, etc?) I've consumed and written about would be very cool. A gallery view of their covers, acting as buttons linking to their review post. Like [here on Twelve Men](https://twelvemen.neocities.org/2/recc) or on [Nick64's site](https://nick64.me/about-me/).
 
 ## My "To-Develop" List
 
@@ -77,7 +99,7 @@ I was invited to the Novetus Creative Team back when it was started in December 
 
 ...
 
-That doesn't mean we're not trying! We're just in something of a drought in terms of plans and game ideas. I don't want to be self-centered because other people have been doing great work, but I myself was working on a handful of prototypes throughout the months. Just a few days ago, I got a really cool idea.
+That doesn't mean we're not trying! We're just in something of a drought in terms of plans and game ideas. I don't want to be self-centered because other people have been doing great work, but I myself was working on a handful of prototypes throughout the months. Just a few days ago, I got a really cool and promising idea.
 
 I don't want to spoil it too much currently, but this random video from almost a year ago might sum up the vibes of the game:
 
@@ -86,11 +108,11 @@ I don't want to spoil it too much currently, but this random video from almost a
 </video>
 <small>[Source: @memesbreakcore on Twitter (headphones warning)](https://twitter.com/memesbreakcore/status/1551349027643482113)</small>
 
-;)
+Stay tuned for more info about this project and others we're working on!
 
 ## One more thing
 
-I got a CRT monitor a few days ago.
+I got a CRT monitor a week ago.
 
 `IMAGE HERE TODO`
 
@@ -102,6 +124,6 @@ As promised earlier, I'll write a blog post about it soon, but in short: did I "
 
 ## Conclusion
 
-Not only am I sorry to people following me and reading these posts for this inactivity, I want to apologize to myself, for failing to be productive for so long. Metaphorically speaking, I vow to wake up and start moving again. That is the mantra I want to follow.
+Not only am I sorry to people following me and reading these posts for this inactivity, I want to apologize to myself for failing to be productive for so long. Metaphorically speaking, I vow to wake up and start moving again. That is the mantra I want to follow.
 
 That's all I have for now. Thank you so much for reading!

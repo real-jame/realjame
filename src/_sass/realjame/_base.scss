@@ -1,12 +1,33 @@
 /**
  * Basic styling
  */
+// :root::before {
+// 	content: "";
+// 	position: absolute;
+// 	width: 200%;
+// 	height: 200%;
+// 	top: -50%;
+// 	left: -50%;
+// 	z-index: -1;
+// 	background-image: url(/assets/misc/truss-single.png);
+// 	transform: rotate(30deg);
+// }
+
+:root {
+	color-scheme: dark;
+
+	@include light-mode() {
+		color-scheme: light;
+	}
+
+}
+
 body {
-	font: $base-font-weight #{$base-font-size}/#{$base-line-height}
-		$base-font-family;
+	font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
 	color: $text-color;
 	background-color: $background-color;
-	background-image: url(/assets/misc/setup.jpg);
+	background-image: url(/assets/misc/starry-night512.gif);
+
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-feature-settings: "kern" 1;
 	-moz-font-feature-settings: "kern" 1;
@@ -20,6 +41,7 @@ body {
 	@include media-query($small-screen) {
 		width: 90%;
 	}
+
 	@include light-mode() {
 		color: $text-color-light;
 		background-color: $background-color-light;
@@ -58,7 +80,8 @@ h3 {
  */
 main {
 	padding: 1em;
-	display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+	display: block;
+	/* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 /**
@@ -83,7 +106,7 @@ video {
 /**
  * Figures
  */
-figure > img {
+figure>img {
 	display: block;
 }
 
@@ -100,8 +123,9 @@ ol {
 }
 
 li {
-	> ul,
-	> ol {
+
+	>ul,
+	>ol {
 		margin-bottom: 0;
 	}
 }
@@ -186,10 +210,19 @@ pre {
 	padding: 8px 12px;
 	overflow-x: auto;
 
-	> code {
+	>code {
 		border: 0;
 		padding-right: 0;
 		padding-left: 0;
+	}
+}
+
+// Textbox
+textarea {
+	background-color: $code-background-color;
+
+	@include light-mode() {
+		background-color: $code-background-color-light;
 	}
 }
 
@@ -242,7 +275,7 @@ pre {
 }
 
 .social-media-list {
-	li + li {
+	li+li {
 		padding-top: 5px;
 	}
 }
@@ -257,9 +290,11 @@ table {
 	color: lighten($text-color, 18%);
 	border-collapse: collapse;
 	border: 1px solid $gray-color;
+
 	@include light-mode() {
 		color: lighten($text-color-light, 18%);
 	}
+
 	tr {
 		&:nth-child(even) {
 			background-color: lighten($background-color, 6%);
@@ -269,10 +304,12 @@ table {
 			}
 		}
 	}
+
 	th,
 	td {
 		padding: ($spacing-unit / 3) ($spacing-unit / 2);
 	}
+
 	th {
 		background-color: $background-color;
 		border: 1px solid $gray-color;
@@ -281,6 +318,7 @@ table {
 			background-color: darken($background-color-light, 1%);
 		}
 	}
+
 	td {
 		border: 1px solid $gray-color;
 	}
