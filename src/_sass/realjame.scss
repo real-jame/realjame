@@ -1,37 +1,33 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: 'PT Sans';
-	src:
-		url('/assets/fonts/PT-Sans/pt-sans_regular.woff2') format('woff2'),
-		url('/assets/fonts/PT-Sans/pt-sans_regular.woff') format('woff');
+	font-family: "PT Sans";
+	src: url("/assets/fonts/PT-Sans/pt-sans_regular.woff2") format("woff2"),
+		url("/assets/fonts/PT-Sans/pt-sans_regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'PT Sans Bold';
-	src:
-		url('/assets/fonts/PT-Sans/pt-sans_bold.woff2') format('woff2'),
-		url('/assets/fonts/PT-Sans/pt-sans_bold.woff') format('woff');
+	font-family: "PT Sans Bold";
+	src: url("/assets/fonts/PT-Sans/pt-sans_bold.woff2") format("woff2"),
+		url("/assets/fonts/PT-Sans/pt-sans_bold.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'PT Sans Italic';
-	src:
-		url('/assets/fonts/PT-Sans/pt-sans_italic.woff2') format('woff2'),
-		url('/assets/fonts/PT-Sans/pt-sans_italic.woff') format('woff');
+	font-family: "PT Sans Italic";
+	src: url("/assets/fonts/PT-Sans/pt-sans_italic.woff2") format("woff2"),
+		url("/assets/fonts/PT-Sans/pt-sans_italic.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'PT Sans Bold Italic';
-	src:
-		url('/assets/fonts/PT-Sans/pt-sans_bold-italic.woff2') format('woff2'),
-		url('/assets/fonts/PT-Sans/pt-sans_bold-italic.woff') format('woff');
+	font-family: "PT Sans Bold Italic";
+	src: url("/assets/fonts/PT-Sans/pt-sans_bold-italic.woff2") format("woff2"),
+		url("/assets/fonts/PT-Sans/pt-sans_bold-italic.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -50,38 +46,48 @@ $base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
 
 $text-color: #cafffa !default;
-$text-color-light: #333 !default;
+$text-color-light: #24413d !default;
 
 // $link-color: lightblue !default;
 // $link-color-light: #30829c !default;
 
 // unused due to image
-$background-color: #222 !default;
+$background-color: #111 !default;
 $background-color-light: #bbb !default;
 
 $content-background-color: #1b2a35 !default;
-$content-background-color-light: #ccc !default;
+$content-background-color-light: #fff !default;
 
 $nav-background-color: #222 !default;
-$nav-background-color-light: #bbb !default;
+$nav-background-color-light: #f2f2f2 !default;
 
 $nav-button-background-color: #444 !default;
-$nav-button-background-color-light: #bbb !default;
+$nav-button-background-color-light: #f4f4f4 !default;
+
+$title-background-color: #272727 !default;
+$title-background-color-light: #eee !default;
+
+$border-color: black !default;
+$border-color-light: #bbb !default;
+
+$border-size: 1px !default;
+$border-size-light: 2px !default;
 
 $brand-color: lightblue !default;
 $brand-color-light: #30829c !default;
 
 $code-background-color: #444 !default;
-$code-background-color-light: #ccc !default;
+$code-background-color-light: $nav-background-color-light !default;
 
-$gray-color: #888 !default;
+$gray-color: #aeaeae !default;
 
-$table-text-align: left !default;
+$table-text-align: center !default;
 
 // Width of the content area
 $content-width: 100% !default;
 
-$small-screen: 800px !default;
+$small-screen: 1200px !default;
+$medium-screen: 1500px !default;
 
 // Use media queries like this:
 // @include media-query($small-screen) {
