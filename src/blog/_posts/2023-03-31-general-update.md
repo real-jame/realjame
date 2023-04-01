@@ -5,9 +5,12 @@ title: "General Update"
 tags: [News, Roblox, Web, Tech]
 # image: /blog/media/OldRoblox2010Thanksgiving.png
 description: "Where have I been these past few months? What have I been (not) doing?"
-date: 2023-03-30
+date: 2023-03-31
 ---
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Website revamps](#website-revamps)
   - [Appearance](#appearance)
   - [Text](#text)
@@ -27,13 +30,11 @@ Hey there. It's been months since my last article, but I'm finally back. First, 
 
 ## Website revamps
 
-It looks a bit prettier now, don't it?
-
 ### Appearance
 
 I have a soft spot for websites with a tiled background, as long as it's pleasing. This one in particular is a starry night from old Roblox. It's a gif recording of it, I adore the subtle color changing animation it has in-game.
 
-The content of the website itself is a slight bit more colorful, with a bluish tint to the text, white borders, and a rounded black edge to the header (shamelessly copied from GNOME). And the website's font is also bigger, so hopefully you won't need to zoom in for a better experience.
+The content of the website itself is a slight bit more colorful, with a bluish tint to the text, white borders, and a rounded black edge to the header (shamelessly copied from GNOME).
 
 Light theme also has these changes. Plus, backgrounds of tables and code blocks look much lighter now, instead of a weird shade of gray.
 
@@ -43,7 +44,11 @@ Icons are properly centered now.
 
 ### Text
 
-The website text no longer uses fancy symbols for quotes and ellipses. Nobody was complaining before, but I think this was a good idea so it's easier to copy and paste excerpts of my blog posts. What I mean basically, is that quotes now show up as `"` and not the pair of rounded quotes, `“` `”`. Single quotes too, `'` instead of `‘` `’`. And for ellipses, `...` (3 periods) instead of `…`.
+The website no longer uses fancy symbols for quotes. Nobody was complaining before, but I think this was a good idea so it's easier to use excerpts of my blog posts in other places. Essentially, quotes now show up as `"` and not the pair of rounded quotes, `“` `”`. Single quotes too, `'` instead of `‘` `’`. Currently, I cannot figure out how to prevent ellipsis `...` from turning fancy. Sorry!
+
+New font - PT Sans. Looks far better than Trebuchet MS, in my opinion.
+
+And the website's font is also bigger, so hopefully you won't need to zoom in for a better experience.
 
 ### SEO
 
@@ -80,7 +85,7 @@ And by the way... I MADE A BUTTON FOR THE SITE! I'll quote what I wrote on the h
 And then you can add it to your site with this HTML code:
 
 <textarea readonly>
-    <a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="realja.me"></a>
+    <a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="The button is a bunch of parts stacked together to form the text 'realja.me'. Shortly after, the pile blows up and each part goes flying in different directions. Then, the recording reverses, and the parts come back together to their original form."></a>
   </textarea>
 
 ### Blog
@@ -104,7 +109,7 @@ Here's the topics I guaranteed want to make into blog posts (I'll update them in
 
 ## Welcome back...
 
-Okay, you might have been wondering why I've been inactive. I'm lazy, alright? Clean and simple. I've been growing content with sitting in my room, doing nothing, but just watching YouTube videos and scrolling Twitter, essentially. That's not the whole story, but the most important part is that I've been mostly inactive with things. Or even if I am making an effort, it's small, and barely productive. Life's been catching me by too; homework is piling up as we get closer to school ending, and family stuff (nothing bad, don't worry. Quite the opposite, in fact! Either way, it distracts me from what I need to do.)
+Okay, you might have been wondering why I've been inactive. I'm lazy, alright? Clean and simple. I've been growing content with sitting in my room, doing nothing, but just watching YouTube videos and scrolling Twitter, essentially. That's not the whole story, but the most important part is that I've been mostly inactive with things. Or even if I am making an effort, it's small, and barely productive. Life's been catching me by too; homework is piling up as we get closer to school ending, and family stuff (nothing bad, don't worry.)
 
 What I'm saying is that I need to snap back and start being regularly productive. Nothing's going to fall into my lap and fix this for me. So I've been making small changes in my lifestyle to put me on a better trajectory. One thing is getting onto a normal sleep schedule. I always found myself having some work I want to do that makes me stay up way late; now, I get it done in the afternoon instead of wasting that time scrolling the internet.
 
@@ -112,9 +117,9 @@ I also am reducing screen time usage on my phone, and the biggest thing is keepi
 
 Last thing is going on a short walk daily on my free days off to take breaks from looking at screens, and reading books as well. I plan to post book reviews, basically just my thoughts on books right after finishing it (with no background knowledge on the book or how it was reviewed/critiqued by others). I've found some interesting books at the library and various thrift stores.
 
-| ![A collection of things laid out: The Catcher in the Rye, "Don't Sweat the Small Stuff at Work" book, "Complete Idiot's Guide to Windows Me" book, "Teach yourself CGI Programming in a Week" book, "Coyote Waits" book, "Web 2.0: New Tools, New Schools" book, a pocket Italian dictionary, Big Brain Academy: Wii Degree for Wii](/blog/media/ThriftingHaul.jpg) |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Thrifting haul!                                                                                                                                                                                                                                                                                                                                                      |
+| ![A collection of things laid out: The Catcher in the Rye, "Don't Sweat the Small Stuff at Work" book, "Complete Idiot's Guide to Windows Me" book, "Teach yourself CGI Programming in a Week" book, "Coyote Waits" book, "Web 2.0: New Tools, New Schools" book, a pocket Italian dictionary, Big Brain Academy: Wii Degree for Wii, an insect nature puzzle, and an orca whale plush.](/blog/media/ThriftingHaul.jpg) |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Thrifting haul!                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 I'm also reading some self-help books to help me "learn how to learn". 
 
@@ -151,16 +156,9 @@ I was invited to the Novetus Creative Team back when it was started in December 
 
 ...
 
-That doesn't mean we're not trying! We're just in something of a drought in terms of plans and game ideas. I don't want to be self-centered because other people have been doing great work, but I myself was working on a handful of prototypes throughout the months. Just a few days ago, I got a really cool and promising idea.
+That doesn't mean we're not trying! We're currently in something of a drought in terms of a definitive game we're all putting our energy into. In these few months, we've had tons and tons of game ideas and prototypes we're working through, and the whole team is still on good morale because we all share the love of old Roblox game development.
 
-<!-- I don't want to spoil it too much currently, but this random video from almost a year ago might sum up the vibes of the game:
-
-<video height="360" width="360" controls>
-  <source src="/blog/media/BreakcoreSFOTH.mp4" type="video/mp4">
-</video>
-<small>[Source: @memesbreakcore on Twitter (headphones warning)](https://twitter.com/memesbreakcore/status/1551349027643482113)</small> -->
-
-Stay tuned for more info about this project and others we're working on!
+Stay tuned for more.
 
 ## One more thing
 
@@ -170,16 +168,16 @@ I got a CRT monitor a week or two ago.
 | --------------------------------------------- |
 | Compaq MV5500 from 2002.                      |
 
-I'm a "zoomer" born in the mid 2000s, so CRTs were already on their way out when I was growing up. I haven't seen a CRT screen powered on in a while, honestly...
-
 I've been interested in getting one for a while, just to try it out and see. Finally, I decided to do it. So I got this one off Facebook Marketplace.
 
-As promised earlier, I'll write a blog post about it soon, but in short: did I "fall for a meme"? Yup. I'm definitely not getting rid of it though, for a few reasons I'll write in the article.
+As promised earlier, I'll write a blog post about it soon, but in short: was it worth it? Ehh... I'm not getting rid of it though, for a few reasons I'll write in the article.
 
 ## Conclusion
 
 My apologies for the inactivity. Though, should I be more apologizing to myself, because my inactivity here probably ensures no one but my close friends will read this?
 
-Either way, I'm ready to get going.
+Either way, I'm ready to get going... for myself, and for any future readers.
 
 That's all I have for now. Thank you so much for reading!
+
+[A DnB song for you - Rings Around Saturn by Photek](https://youtu.be/Eaqxo1R7raA)

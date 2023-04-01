@@ -6,6 +6,7 @@
 		url("/assets/fonts/PT-Sans/pt-sans_regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
 		url("/assets/fonts/PT-Sans/pt-sans_bold.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
 		url("/assets/fonts/PT-Sans/pt-sans_italic.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -30,14 +33,12 @@
 		url("/assets/fonts/PT-Sans/pt-sans_bold-italic.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 // Define defaults for each variable.
 
 $base-font-family: "PT Sans", sans-serif;
-// $base-font-family: "Open Sans", serif;
-// $base-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-// 	"Lucida Sans", Arial, sans-serif !default;
 $base-font-size: 20px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
@@ -86,16 +87,8 @@ $table-text-align: center !default;
 // Width of the content area
 $content-width: 100% !default;
 
-$small-screen: 1200px !default;
+$small-screen: 800px !default;
 $medium-screen: 1500px !default;
-
-// Use media queries like this:
-// @include media-query($small-screen) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
 @mixin media-query($device) {
 	@media screen and (max-width: $device) {
 		@content;

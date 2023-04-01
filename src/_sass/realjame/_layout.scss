@@ -49,7 +49,7 @@
 
 	.page-link {
 		background-color: $nav-button-background-color;
-		margin: 0 10px;
+		margin: 0 1em;
 		padding: 0.5em;
 		border-radius: 3px;
 
@@ -57,28 +57,16 @@
 			background-color: $nav-button-background-color-light;
 		}
 
-		@include media-query($small-screen) {
-			margin: 0 0.25em;
-			padding: 0.2em;
-		}
-
 		@include media-query($medium-screen) {
 			margin: 0 0.5em;
 			padding: 0.35em;
 		}
-	}
 
-	@include media-query($small-screen) {
-		.page-link {
-			padding: 5px 10px;
+		@include media-query($small-screen) {
+			margin: auto;
+			padding: auto;
 		}
 	}
-
-	// @include media-query($medium-screen) {
-	// 	.page-link {
-	// 		padding: 5px 10px;
-	// 	}
-	// }
 }
 
 /**
@@ -87,6 +75,10 @@
 .button-row {
 	text-align: center;
 	list-style: none;
+
+	@include media-query($small-screen) {
+		text-align: unset;
+	}
 }
 
 .button-row a {
@@ -94,7 +86,11 @@
 }
 
 .button-row a img {
-	width: auto;
+	max-width: 100%;
+
+	@include media-query($small-screen) {
+		width: 200%;
+	}
 }
 
 .site-footer {
@@ -113,8 +109,27 @@
 		border-width: $border-size-light;
 	}
 
-	@media (max-width: 768px) {
-		// flex-direction: column;
+	a {
+		width: auto;
+		padding: 1em;
+		background-color: $nav-button-background-color;
+		margin: 0 1em;
+		border-radius: 3px;
+		white-space: nowrap;
+
+		@include light-mode() {
+			background-color: $nav-button-background-color-light;
+		}
+
+		@include media-query($medium-screen) {
+			margin: 0 0.5em;
+			padding: 0.5em;
+		}
+
+		@include media-query($small-screen) {
+			margin: 0 -0.25em;
+			padding: 0.5em;
+		}
 	}
 }
 
@@ -123,21 +138,35 @@
 	margin-bottom: $spacing-unit / 2;
 }
 
-.site-footer a {
-	width: auto;
-	padding: 1em;
-	background-color: $nav-button-background-color;
-	margin: 0 10px;
-	border-radius: 3px;
-	white-space: nowrap;
+.footer-bar {
+	padding: 0;
+	text-align: center;
+	list-style: none;
 
-	@include light-mode() {
-		background-color: $nav-button-background-color-light;
+	li {
+		margin: 0.5em;
+		display: inline-block;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
+}
 
-	@media (max-width: 768px) {
-		margin: 0 0.25em;
-		padding: 0.2em;
+.header-bar {
+	margin: 0;
+
+	li {
+		margin: 0.5em 0;
+
+		a {
+			width: 100%;
+			font-size: 1em;
+		}
 	}
 }
 

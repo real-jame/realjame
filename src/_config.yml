@@ -21,7 +21,7 @@
 title: realjame
 email: james@realja.me
 description: >- # this means to ignore newlines until "baseurl:"
-  A personal website and blog by a programmer and some other things. I write about a variety of things to help take back the web from corporations and bots.
+  realjame is a personal website and blog that writes about a variety of topics: mainly tech such as web development and old Roblox games.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://realja.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: real__jame
@@ -56,3 +56,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+markdown: kramdown
+kramdown:
+  smart_quotes: [apos, apos, quot, quot] 
