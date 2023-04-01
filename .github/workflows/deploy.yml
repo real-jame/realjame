@@ -13,4 +13,4 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - name: Deploy
-        run: ssh -4 root@s.realja.me "cd ~/realjame && git fetch origin master && git reset --hard origin/master && docker-compose up --build --remove-orphans --detach" # && git fetch && git checkout HEAD src"
+        run: ssh -4 root@216.155.152.171 "cd ~/realjame && git fetch origin master && git reset --hard origin/master && docker-compose up --build --remove-orphans --detach" # && git fetch && git checkout HEAD src"
