@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Create SSH key
         run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          install -m 600 -D /dev/null ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - name: Deploy
         run: ssh -4 root@216.155.152.171 "cd ~/realjame && git fetch origin master && git reset --hard origin/master && docker-compose up --build --remove-orphans --detach" # && git fetch && git checkout HEAD src"
