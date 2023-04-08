@@ -45,6 +45,8 @@ Icons are properly centered now.
 
 The website no longer uses fancy symbols for quotes. Nobody was complaining before, but I think this was a good idea so it's easier to use excerpts of my blog posts in other places. Essentially, quotes now show up as `"` and not the pair of rounded quotes, `“` `”`. Single quotes too, `'` instead of `‘` `’`. Currently, I cannot figure out how to prevent ellipsis `...` from turning fancy. Sorry!
 
+**4/8/23 update: Never mind, I figured it out!!!**
+
 New font - PT Sans. Looks far better than Trebuchet MS, in my opinion.
 
 And the website's font is also bigger, so hopefully you won't need to zoom in for a better experience.
