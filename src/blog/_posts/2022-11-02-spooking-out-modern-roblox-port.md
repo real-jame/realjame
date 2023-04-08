@@ -10,13 +10,13 @@ date: 2022-11-02
 
 Hey everyone, I am proud to announce the modern Roblox port of _Spooking Out!_ has been published to the Roblox website under our group!
 
-_Don't know about Spooking Out or Tobic Bay? Read the [previous article]({% post_url 2022-10-24-introducing-spooking-out %})._
+_Don't know about Spooking Out or Tobic Bay? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %})._
 
 This means you can now play our game on modern Roblox. Oh, and we also went back and improved the experience to make playing it on mobile, controller, and Xbox just as playable and fun!
 
 # [Play it here!](https://www.roblox.com/games/11373614692/Spooking-Out)
 
-_[Or check out the Novetus 2010L version!]({% post_url 2022-10-24-introducing-spooking-out %})_
+_[Or check out the Novetus 2010L version!]({% post_url /blog/2022-10-24-introducing-spooking-out %})_
 
 There are also 5 badges -- essentially, achievements. Here's one of them:
 

@@ -20,7 +20,7 @@ title: "realja.me"
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | "" }}
+            {{ post.title | default: "-Untitled-" }}
           </a>
           {%- if post.description -%}
             {{ post.description }}
@@ -57,10 +57,10 @@ title: "realja.me"
         src="assets/icons/spookingout.png"
         alt="Spooking Out icon"
         class="icon" />
-      <a href="{% post_url 2022-10-24-introducing-spooking-out %}">Spooking Out!</a>
+      <a href={% post_url /blog/2022-10-24-introducing-spooking-out %}>Spooking Out!</a>
     </dt>
     <dd>A game made for the 2010 Roblox engine about catching ghosts.
-      <a href="{% post_url 2022-11-02-spooking-out-modern-roblox-port %}">There's a port to modern Roblox too!</a>
+      <a href="{% post_url /blog/2022-11-02-spooking-out-modern-roblox-port %}">There's a port to modern Roblox too!</a>
     </dd>
     <dt>
       <img
