@@ -33,6 +33,7 @@ defaults:
       type: "posts"
     values:
       permalink: /blog/:title.html
+future: true
 
 # Build settings
 plugins:
@@ -59,4 +60,5 @@ plugins:
 
 markdown: kramdown
 kramdown:
-  smart_quotes: [apos, apos, quot, quot] 
+  smart_quotes: [apos, apos, quot, quot]
+  typographic_symbols: { hellip: ... }
