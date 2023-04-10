@@ -58,6 +58,8 @@ I don't even need to mention the other voice actors here, because everyone knew 
 
 The movie was an hour and a half (minus 10 minutes for credits), but it felt more like 20. Big fan of Mario here, so I enjoyed going through all the classics of Mario - the Mushroom Kingdom, Bowser's lands, the Kong Kingdom, Mario Kart, etc. But when the movie was over, it did feel short in retrospect. And for those who aren't such fans of Mario, it might feel a bit too hectic having to get introduced to all these crazy places and concepts in rapidfire. The movie would have benefited from another 20-30 minutes, I'd imagine. Sonic the Hedgehog 2 was two hours long and I thought that movie was a pretty solid length and pace.
 
+**Edit 4/10/23: I thought about it more, and I think that something more like 5-15 would work. The movie had a great amount of action and I wouldn't want boring meandering that accomplishes nothing to take away from that. /shrug**
+
 ### Luigi was shelved for 80% of the movie
 
 This is just criminal! Luigi is a lot of people's favorite Mario character and the fact he's just AFK for the majority of the film locked away in Bowser's castle doing nothing is a bit unsatisfying. I don't think this plot point was completely useless, as it gave Mario a strong motivation throughout the movie, as he's doing everything to save his brother. And I think the final battle where the brothers get the star power was AWESOME and almost made me forgive them. I imagine that they would have to rework a lot of the movie for Mario and Luigi to stay together while still having a motivation to explore the land and help Peach stop Bowser, other than because they're good people who enjoy the heroics, which doesn't sound like Mario.
@@ -66,7 +68,7 @@ This is just criminal! Luigi is a lot of people's favorite Mario character and t
 
 My first reaction was ... okay? We already saw Yoshi in the movie, if only for a brief scene. But thinking about it later, it does set up the plot for Mario 2, possibly. A baby Yoshi runs rampant in Brooklyn eating stuff, and Mario and Luigi have to return to handle the situation. So there you go.
 
-![A stick figure looking at Sonic the Hedgehog 2 and The Super Mario Bros. Movie and screaming "WHERE THE FUCK IS WARIO"](../blog/media/WhereIsWario.jpg)
+![A stick figure looking at Sonic the Hedgehog 2 and The Super Mario Bros. Movie, screaming "WHERE THE FUCK IS WARIO"](../blog/media/WhereIsWario.jpg)
 
 ### The trailers showed almost the entire movie
 
@@ -86,6 +88,6 @@ If you're not a huge Mario fan, you might like it. But if you are, you will love
 
 ...9/10? But I'll probably go down to like an 8 over time after fully digesting the movie.
 
-*Sorry for not writing a lot in this section, I got tired of writing lol. But trust me, my praises for this movie greatly outweigh any nitpicks I wrote about earlier. I adore this movie, equally so to Sonic the Hedgehog 2.*
+*Sorry for not writing a lot in this section, I got tired of writing lol. But trust me, my praises for this movie greatly outweigh any nitpicks I wrote about earlier.*
 
 <small><a href="https://nick64.me/netlogs/2023/04/the-super-mario-bros-movie/">By the way, go read my friend Nick64's review of the movie. Thanks!</a></small>
