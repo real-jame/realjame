@@ -2,7 +2,7 @@
 layout: post
 section: news
 title: "General Update"
-tags: [News, Roblox, Web, Tech]
+tags: [News, Roblox, Web]
 description: "Where have I been these past few months? What have I been (not) doing?"
 date: 2023-03-31
 ---
