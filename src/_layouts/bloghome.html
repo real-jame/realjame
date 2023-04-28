@@ -17,18 +17,25 @@ title: "Posts"
     </p>
     <ul class="post-list">
       {%- for post in site.posts -%}
-
-        <li>
+        <li
+          {% if post.tags contains "Devlogs" %}
+          class="small-entry"
+          {% endif %}>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span class="post-meta">
+            {% if post.tags contains "Devlogs" %}Devlog -
+            {% endif %}
+            {{ post.date | date: date_format }}</span>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | default: "-Untitled-" }}
           </a>
-          {%- if post.description -%}
-            {{ post.description }}
-          {%- endif -%}
+          {% unless post.tags contains "Devlogs" %}
+            {%- if post.description -%}
+              {{ post.description }}
+            {%- endif -%}
+          {% endunless %}
         </li>
-        endif
+        <br>
       {%- endfor -%}
     </ul>
 

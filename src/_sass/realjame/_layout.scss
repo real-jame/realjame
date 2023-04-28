@@ -213,11 +213,22 @@
 	font-size: $small-font-size;
 	color: $gray-color;
 	text-align: center;
+	margin: 0;
+}
+
+.post-description {
+	font-size: 1.2em;
+	font-style: italic;
 }
 
 .post-link {
 	display: block;
+
 	@include relative-font-size(1.5);
+}
+
+.post-link > p {
+	margin: 0;
 }
 
 /**
@@ -246,6 +257,20 @@
 				text-decoration: underline;
 			}
 		}
+	}
+}
+
+.small-entry {
+	display: flex;
+	align-items: center;
+
+	.post-meta {
+		margin-right: 1em;
+		white-space: nowrap;
+	}
+
+	.post-link {
+		font-size: 25px;
 	}
 }
 

@@ -13,18 +13,31 @@ title: "realja.me"
   <p class="rss-subscribe">subscribe
     <a href="{{ "/feed.xml" | relative_url }}">via RSS!</a>
   </p>
-  <ul class="post-list">
-    {%- for post in site.posts limit: 3 -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | default: "-Untitled-" }}
-        </a>
-        {%- if post.description -%}
-          {{ post.description }}
+
+  <!--
+  This code will return the latest 3 posts with/without the devlogs tag.
+  We can't just use the limit property on a for loop for this, because if a post is filtered
+  we need to search beyond the first 3.
+  --><ul class="post-list">
+    {%- assign count = 0 -%}
+    {%- for post in site.posts -%}
+      {%- unless post.tags contains "Devlogs" -%}
+        {%- if count < 3 -%}
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <li>
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | default: "-Untitled-" }}
+            </a>
+            {%- if post.description -%}
+              {{ post.description }}
+            {%- endif -%}
+          </li>
+          {%- assign count = count | plus: 1 -%}
+        {%- else -%}
+          {%- break -%}
         {%- endif -%}
-      </li>
+      {%- endunless %}
     {%- endfor -%}
   </ul>
 
@@ -33,20 +46,25 @@ title: "realja.me"
   <h2>Recent Devlogs</h2>
 
   <ul class="post-list">
-    {%- for post in site.posts limit: 3 -%}
-      {% if post.tags contains "devlog" %}
-        <li>
+    {%- assign count = 0 -%}
+    {%- for post in site.posts -%}
+      {%- if post.tags contains "Devlogs" -%}
+        {%- if count < 3 -%}
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | default: "-Untitled-" }}
-          </a>
-          {%- if post.description -%}
-            {{ post.description }}
-          {%- endif -%}
-        </li>
-      {% endif %}
-
+          <li>
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | default: "-Untitled-" }}
+            </a>
+            {%- if post.description -%}
+              {{ post.description }}
+            {%- endif -%}
+          </li>
+          {%- assign count = count | plus: 1 -%}
+        {%- else -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endif %}
     {%- endfor -%}
   </ul>
 

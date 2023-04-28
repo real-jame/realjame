@@ -9,6 +9,8 @@ permalink: /blog/:title
   itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <p class="post-meta">
+      <span class="post-description">"{{ page.description }}"</span>
+      <br>
       <time
         class="dt-published"
         datetime="{{ page.date | date_to_xmlschema }}"
@@ -16,15 +18,6 @@ permalink: /blog/:title
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
  -%} {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-        •
-        <span
-          itemprop="author"
-          itemscope
-          itemtype="http://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-        </span>
-      {%- endif -%}
     </p>
   </header>
 
