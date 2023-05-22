@@ -96,6 +96,10 @@ img {
 	margin-right: auto;
 	// width: 100%;
 	max-width: 60%;
+
+	@include media-query($small-screen) {
+		max-width: 45%;
+	}
 }
 
 /**

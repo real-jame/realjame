@@ -10,35 +10,52 @@ title: "Posts"
 
   {%- include tagcloud.html -%}
 
-  {%- if site.posts.size > 0 -%}
     <h2>Posts</h2>
     <p class="rss-subscribe">subscribe
       <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
     </p>
+
+    {% comment %}
+    this is awful
+    {% endcomment %}
+
     <ul class="post-list">
       {%- for post in site.posts -%}
         <li
           {% if post.tags contains "Devlogs" %}
           class="small-entry"
-          {% endif %}>
+          {% endif %}
+        >
+          {% if post.tags contains "Devlogs" %}
+          <div class="stack">
+          {% endif %}
+
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">
             {% if post.tags contains "Devlogs" %}Devlog -
             {% endif %}
-            {{ post.date | date: date_format }}</span>
+            {{ post.date | date: date_format }}
+          </span>
+
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | default: "-Untitled-" }}
           </a>
+
           {% unless post.tags contains "Devlogs" %}
             {%- if post.description -%}
               {{ post.description }}
             {%- endif -%}
           {% endunless %}
+
+          {% if post.tags contains "Devlogs" %}
+            </div>
+          {% endif %}
+
+            <img src={{ post.image }} width="500" height="300"></img>
+          
         </li>
+        
         <br>
       {%- endfor -%}
     </ul>
-
-  {%- endif -%}
-
 </div>
