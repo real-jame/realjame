@@ -74,7 +74,7 @@ I also added some good old 88x31 buttons to the home page, they link to my favor
 
 And by the way... I MADE A BUTTON FOR THE SITE! I'll quote what I wrote on the home page about it.
 
-<a href="https://realja.me"><img src="/realjame.gif" alt="realja.me"></a>
+<a href="https://realja.me"><img src="/assets/mybutton/2023-03-31-baseplate.gif" alt="realja.me"></a>
 
 > I have my own 88x31 gif button for this website! I would be humbled if you make use of it. If you do, please let me know, I'd love to see your site!
 > 
@@ -87,7 +87,7 @@ And by the way... I MADE A BUTTON FOR THE SITE! I'll quote what I wrote on the h
 And then you can add it to your site with this HTML code:
 
 <textarea readonly>
-    <a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="The button is a bunch of parts stacked together to form the text 'realja.me'. Shortly after, the pile blows up and each part goes flying in different directions. Then, the recording reverses, and the parts come back together to their original form."></a>
+    <a href="https://realja.me"><img src="https://realja.me/realjame.gif" alt="realja.me"></a>
   </textarea>
 
 ### Blog

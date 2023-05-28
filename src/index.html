@@ -9,16 +9,11 @@ title: "realja.me"
   </p>
 
   <h2>Recent Posts</h2>
-
-  <p class="rss-subscribe">subscribe
-    <a href="{{ "/feed.xml" | relative_url }}">via RSS!</a>
-  </p>
-
   <!--
   This code will return the latest 3 posts with/without the devlogs tag.
   We can't just use the limit property on a for loop for this, because if a post is filtered
   we need to search beyond the first 3.
-  --><ul class="post-list">
+  --><ul class="post-list" style="margin: 0;">
     {%- assign count = 0 -%}
     {%- for post in site.posts -%}
       {%- unless post.tags contains "Devlogs" -%}
@@ -40,12 +35,10 @@ title: "realja.me"
       {%- endunless %}
     {%- endfor -%}
   </ul>
-
-  <hr>
-
+  <br>
   <h2>Recent Devlogs</h2>
 
-  <ul class="post-list">
+  <ul class="post-list" style="margin: 0;">
     {%- assign count = 0 -%}
     {%- for post in site.posts -%}
       {%- if post.tags contains "Devlogs" -%}

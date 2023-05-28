@@ -206,7 +206,9 @@
 	@include media-query($small-screen) {
 		padding: 0;
 	}
+}
 
+.post-list-outline {
 	li {
 		border: 2px solid $border-color;
 		border-radius: 2px;
@@ -322,6 +324,14 @@
 			min-width: 100%;
 		}
 	}
+}
+
+.green-tag {
+	background-color: green;
+	color: white;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-radius: 1em;
 }
 
 /**

@@ -19,7 +19,7 @@ title: "Posts"
     this is awful
     {% endcomment %}
 
-    <ul class="post-list">
+    <ul class="post-list post-list-outline">
       {%- for post in site.posts -%}
         <li
           {% if post.tags contains "Devlogs" %}
@@ -32,7 +32,7 @@ title: "Posts"
 
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">
-            {% if post.tags contains "Devlogs" %}Devlog -
+            {% if post.tags contains "Devlogs" %}<span class="green-tag">Devlog</span> -
             {% endif %}
             {{ post.date | date: date_format }}
           </span>
