@@ -1,0 +1,45 @@
+theme = "main"
+baseURL = 'https://realja.me/'
+languageCode = 'en-us'
+title = 'realjame'
+author = "realjame"
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 20
+
+[[menus.main]]
+name = 'Notes'
+pageRef = '/notes'
+weight = 30
+
+[[menus.main]]
+name = 'Projects'
+pageRef = '/projects'
+weight = 40
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 50
+
+[[menus.links]]
+name = 'Legacy Roblox Wiki'
+pageRef = 'wiki.realja.me'
+weight = 10
+
+[[menus.links]]
+name = 'textarea.site'
+pageRef = 'textarea.site'
+weight = 20
+
+[[menus.links]]
+name = 'Lua minifier'
+pageRef = 'lua.realja.me'
+weight = 30
