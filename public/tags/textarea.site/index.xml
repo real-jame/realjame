@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Textarea.site on realjame</title>
+    <link>http://localhost:1313/tags/textarea.site/</link>
+    <description>Recent content in Textarea.site on realjame</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/textarea.site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⚛️ React: When everything looks like a nail...</title>
+      <link>http://localhost:1313/notes/2023-09-12-web-frameworks/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/2023-09-12-web-frameworks/</guid>
+      <description>I&amp;rsquo;ve been working on textarea.site as a way to dive back into the beautiful and the ugly parts of front-end web development. After a few days of work, I decided to rewrite the entire project in Svelte. Surprising? Maybe not. It&amp;rsquo;s about the right tool for the job, and here, React is not it.&#xA;I&amp;rsquo;m sure people have written countless times about this. But it&amp;rsquo;s true that being versatile is one of the best skills you can have as a software developer.</description>
+    </item>
+    <item>
+      <title>September Status</title>
+      <link>http://localhost:1313/notes/2023-09-03-september-status/</link>
+      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/2023-09-03-september-status/</guid>
+      <description>Day 3 of September. Things are going OK for me, I just wanted to write down here what I&amp;rsquo;m aiming for this month. Right now, I&amp;rsquo;m focusing on college applications and web development projects, so Roblox stuff will keep taking a back seat.&#xA;I wrote on my Projects page that the new Project Micrathena will resume development this month. I hope I will find time to work on it, but it will likely be at the end of September, and not the start as hoped.</description>
+    </item>
+  </channel>
+</rss>

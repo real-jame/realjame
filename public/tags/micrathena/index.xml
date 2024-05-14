@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micrathena on realjame</title>
+    <link>http://localhost:1313/tags/micrathena/</link>
+    <description>Recent content in Micrathena on realjame</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/micrathena/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hi</title>
+      <link>http://localhost:1313/notes/2023-11-08-hi/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/2023-11-08-hi/</guid>
+      <description>I wanted to write another daily note. (I&amp;rsquo;ve been meaning to.)&#xA;I&amp;rsquo;m not dead. That&amp;rsquo;s the most important thing! Now you know.&#xA;I don&amp;rsquo;t have anything to show for any projects at the moment. That doesn&amp;rsquo;t mean I haven&amp;rsquo;t done anything or I&amp;rsquo;ve abandoned them; just that they aren&amp;rsquo;t complete enough to present.&#xA;That&amp;rsquo;s the reason there haven&amp;rsquo;t been any blog/devlog posts. For the near future, I only want to share completed work and not just discuss what I&amp;rsquo;m dreaming of.</description>
+    </item>
+  </channel>
+</rss>

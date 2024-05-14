@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Spooking Out&#39;s Modern Roblox Port | realjame</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+<body>
+  <header>
+    <h1>realjame</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a href="/notes/">Notes</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a href="/notes/">Notes</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+  </header>
+  <main>
+    
+  <h1>Spooking Out&#39;s Modern Roblox Port</h1>
+
+  
+  
+  <time datetime="2022-11-02T00:00:00&#43;00:00">November 2, 2022</time>
+
+  <p>Hey everyone, I am proud to announce the modern Roblox port of <em>Spooking Out!</em> has been published to the Roblox website!</p>
+<p><em>Don&rsquo;t know about Spooking Out? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %}).</em></p>
+<p>This means you can now play our game on modern Roblox. Oh, and we also went back and improved the experience to make playing it on mobile, controller, and Xbox just as playable and fun!</p>
+<h3 id="play-it-herehttpswwwrobloxcomgames11373614692spooking-out"><a href="https://www.roblox.com/games/11373614692/Spooking-Out">Play it here!</a></h3>
+<p><em>[Or check out the Novetus 2010L version!]({% post_url /blog/2022-10-24-introducing-spooking-out %})</em></p>
+<p>There are also 5 badges &ndash; essentially, achievements. Here&rsquo;s one of them:</p>
+<p>{% include image.html url=&quot;/blog/media/SpookingOutModernBadge.png&quot; alt=&ldquo;Brown bag with the word &lsquo;Tix&rsquo; printed on it, overlayed on a Spooking Out map screenshot with an orange-yellow filter.&rdquo; caption=&ldquo;Can you get them all?&rdquo; x=&quot;&quot; y=&quot;&quot; %}</p>
+<h2 id="tldr">TL;DR</h2>
+<p>Here&rsquo;s a list of this port&rsquo;s additions/changes to the 2010L Novetus version.</p>
+<ul>
+<li>Based off a patch made after the original release, <code>v1.0.2</code>, which has a couple more bug fixes. This will be the version included in the Novetus launcher, I&rsquo;ll talk about that more in a later blog post!</li>
+<li>Partial rewrite of the codebase to make it work on modern Roblox.</li>
+<li>Menu buttons now stacked vertically on the left center side of the screen.</li>
+<li>Grab tool charge UI is now bigger and positioned higher up (to fit on mobile).</li>
+<li>New menu button: &ldquo;Invite Friends&rdquo; which opens a built-in Roblox menu to send your friends an invite link to your server.</li>
+<li>5 badges to earn by reaching various goals in the game!</li>
+<li>Now can be played on MacOS, Xbox, iOS, Android, and with a controller thanks to modern Roblox&rsquo;s cross-platform-ness!</li>
+<li>Menu buttons have controller bindings and button icons to make life easier, they use the D-pad.</li>
+</ul>
+<h2 id="release-date">Release Date</h2>
+<p>You might notice that I am publishing this article on November 1, which is not, in fact, Halloween. Except I DID RELEASE IT ON TIME!</p>
+<p><img src="/blog/media/SpookingOutModernTweet.png" alt="Screenshot of my Tweet with a text body of &ldquo;LET IT BE KNOWN THAT I HAVE RELEASED &lsquo;Spooking Out!&rsquo; ON OCTOBER 31 2022 (Halloween) AND NOT November 1 2022 (not Halloween). literally turning it in at 11:59 pm like it&rsquo;s homework lol. #Roblox #RobloxDev&rdquo;. A screenshot image of the game page for Spooking Out on modern Roblox is attached to the Tweet. The tweet is dated October 31, 2022 at 11:48 PM."></p>
+<p>Though, I&rsquo;m releasing this a few days late. Sorry&hellip; some things got in the way, schoolwork being one of them. I hope you still enjoy the game in it&rsquo;s own right!</p>
+<h2 id="behind-the-scenes">Behind the scenes</h2>
+<p>This was a solo effort because Tobu.fi already wanted to take a break and he doesn&rsquo;t know modern Roblox development very well. Plus, this was pretty simple, so I could do it by myself.</p>
+<p>Work was split into 2 phases of development. Fixing the code to run on modern (the important part), and then &ldquo;bonus features&rdquo; in the remaining time I have.</p>
+<h3 id="fixing-the-code">Fixing the code</h3>
+<p>So, who would&rsquo;ve thought that 12 years of engine updates would break our game? Actually, it mostly worked. Rounds, shop, and leaderboards all worked perfectly. But the tools don&rsquo;t. Because the former runs code on the server, and the latter on the client&hellip; and that&rsquo;s where Roblox&rsquo;s most devastating change that breaks old games lies.</p>
+<h4 id="filtering-enabled">Filtering Enabled</h4>
+<p>That&rsquo;s what it&rsquo;s called. It was added in 2014, and it became mandatory some time after, a few years or so. I&rsquo;ll be brief about it to not get too boring, if you want to read more about it, <a href="https://create.roblox.com/docs/scripting/networking/client-server-model">check the Roblox <del>Wiki</del> <del>Developer Hub</del> Documentation.</a>
+<del><em>Also, don&rsquo;t take this as the complete truth, this is all from memory.</em></del></p>
+<p>You have your clients and your server. The server handles most of the data, and the clients are each player connecting to it. This is how hackers can perform exploits; they manipulate what their client tells the server to do or change. For example, they could instantly have 1 million gold by telling the server that they have 1 million gold, if there are no proper checks in place.</p>
+<p>This is why exploiting is so rampant on old Roblox servers (besides the fact new anticheats can&rsquo;t be very easily modded on): there is much less security in place for what clients can manipulate. There is <em>some</em>, but in general, you can do basically whatever you want in a tool, such as placing a bomb, or killing a player, all done from a clientsided Script.</p>
+<p>This is fun and easy for developers to work with! But, exploiters are annoying too, of course. Roblox added this &ldquo;Filtering Enabled&rdquo; thing some years afterwards, where the server pretty much does not trust the client at all. If the client wants to place a bomb or kill a player, they have to <strong>ask the server</strong> to do it by activating a &ldquo;RemoteEvent&rdquo; or &ldquo;RemoteFunction&rdquo;, which signals a function in a server-sided script to run.</p>
+<p><img src="/blog/media/SpookingOutModernRemoteEventFlow.png" alt="A diagram of the Filtering Enabled flow in modern Roblox. A LocalScript has an action: &ldquo;Player presses &lsquo;Buy&rsquo; button&rdquo;. A remote event links an arrow from the LocalScript to the (server) Script&rsquo;s flowchart: &ldquo;Does player have enough money?&rdquo; A &ldquo;NO&rdquo; arrow links to &ldquo;Don&rsquo;t give item&rdquo;, and a &ldquo;YES&rdquo; arrow links to &ldquo;Give item to player&rdquo;."></p>
+<hr>
+<p>With that said, fixing the tools to be FE compatible was a fairly easy effort. Move the function that should be run on the server to a server script, and have the client call a RemoteEvent to run that function instead of directly running the function. Simple.</p>
+<p>Although, our from-scratch Grab tool designed solely for this game is a bit more complicated than the 2007-era tools found in the shop. The Grab tool relies on maintaining a state and flow of the code and events.</p>
+<ul>
+<li>What part does the player want to pick up?</li>
+<li>Are we currently holding a ghost?</li>
+<li>How long has the player held the left click to charge their throw?</li>
+<li>Should we pick up a ghost or start charging the one we might possibly have?</li>
+</ul>
+<p>But, it was not very hard to do either.</p>
+<h3 id="bonus-features">Bonus features</h3>
+<h4 id="mobile-controller-and-xbox-support">Mobile, controller, and Xbox support</h4>
+<p>Roblox already has built-in support for all these control options. Even though the code was designed only with old Roblox&rsquo;s single platform in mind, Windows keyboard+mouse, they have great backwards compatibility. So when the tools trigger on &ldquo;Mouse left click&rdquo;, in actuality a controller right trigger press or mobile tap activates this as well.</p>
+<h4 id="ghostwalk">Ghostwalk</h4>
+<p>This was the simplest. It actually all works, but I added a very simple quality-of-life feature for mobile and controllers.</p>
+<p>The Ghostwalk ability lets you hold down left click to float into the air for a bit, like a ghost. But on controllers, it&rsquo;s a bit uncomfortable to always hold down right trigger, and on mobile, you need to let go of the tap to move the camera or player!</p>
+<p>So, I made the &ldquo;stop floating&rdquo; part of the code not run if the last input type was a touchscreen or controller. Thanks, <a href="https://create.roblox.com/docs/reference/engine/classes/UserInputService">UserInputService</a>!</p>
+<h4 id="grab-tool">Grab tool</h4>
+<p>Simple too, utilize <a href="https://create.roblox.com/docs/reference/engine/classes/ContextActionService">ContextActionService</a> to replace the Mouse events with &ldquo;Context Bindings&rdquo; which maps the actions to multiple inputs - a mouse click, a touchscreen tap, and a controller button press.</p>
+<p>No new behavior was added in this refactoring, but I had to do it for one specific thing: a mobile button. You can use ContextActionService to display a UI button to trigger the action on mobile.</p>
+<p>The reason I did this was due to a tap anywhere on the screen triggering the Mouse actions. This is fine for picking up, but what about throwing? Simply tapping the screen to move the character or camera will throw the ghost - very annoying!</p>
+<h4 id="gui">GUI</h4>
+<p>This is what the gui looked like as-is from the 2010L version on mobile.</p>
+<p><img src="/blog/media/SpookingOutModernGuiBefore.png" alt="A mobile screenshot with the menu buttons overlapping with the banner and chat UI, and the charge UI overlapping with the tools list."></p>
+<p>Now here&rsquo;s after my redesign.</p>
+<p><img src="/blog/media/SpookingOutModernGuiAfter.png" alt="A mobile screenshot with the menu buttons positioned vertically on the left center side of the screen and the charge UI placed neatly above the tools list."></p>
+<p><img src="/blog/media/SpookingOutModernControllerIndicators.png" alt="A screenshot of the menu buttons, with a controller"></p>
+<ul>
+<li>Moved menu buttons to the center left side of the screen</li>
+<li>Made the charge gui bigger and positioned higher up to not overlap with the tools menu on mobile</li>
+<li>Menu button text now scales to fit the size of the button</li>
+<li>Added controller button mappings for the menu buttons (d-pad) and controller indicator icons for them when one is connected</li>
+</ul>
+<h4 id="badges">Badges</h4>
+<p>Badges were pretty simple. Just add the check for the requirement to get it in the script that handles that behavior. The &ldquo;buy everything&rdquo; badge will be awarded by the shop script, the perfect score badge in the rounds script, etc.</p>
+<p>You can see how to get each badge on the <a href="https://www.roblox.com/games/11373614692/Spooking-Out">Roblox page</a>.</p>
+<h4 id="the-rest">The rest</h4>
+<p>As I said, Roblox has surprisingly good backwards compatibility with old code. Every other part of the game, such as the shop, round status text banner, and the other shop tools, work just fine on mobile, controllers, and Xbox.</p>
+<p>Of course, I could have worked more. I could have ported it to <a href="https://create.roblox.com/docs/reference/engine/classes/UserInputService">ContextActionService</a> and give mobile users a dedicated button on some tools. Or, add a lock-on feature for controller users so they don&rsquo;t have to look straight at the ghosts? But, those things are more complicated and would take time, time I don&rsquo;t have. It should be quite playable on mobile, controller, and Xbox nonetheless : ]</p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>Here&rsquo;s how everything came together, allowing me to play our game on modern Roblox, on my phone!</p>
+<!-- raw HTML omitted -->
+<p>I&rsquo;ve tried making modern Roblox projects before, but like with old Roblox, this is my first time releasing a finished product. All in all, it was fun. We hope you continue enjoying it just as much as we did porting it!</p>
+<p>After almost a month of active work on this project from the both of us, it&rsquo;s finally 100% complete. We&rsquo;ll be taking a break for a few weeks to figure out where to go from here. Stay tuned for more blog posts and other tech projects from me in that time!</p>
+<p>Hope you had a great Halloween!</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/news/">News</a></li>
+        <li><a href="/tags/roblox/">Roblox</a></li>
+        <li><a href="/tags/classic-roblox/">Classic-Roblox</a></li>
+        <li><a href="/tags/modern-roblox/">Modern-Roblox</a></li>
+        <li><a href="/tags/spooking-out/">Spooking-Out</a></li>
+        <li><a href="/tags/tech/">Tech</a></li>
+        <li><a href="/tags/thought/">Thought</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

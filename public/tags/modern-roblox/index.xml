@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modern-Roblox on realjame</title>
+    <link>http://localhost:1313/tags/modern-roblox/</link>
+    <description>Recent content in Modern-Roblox on realjame</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/modern-roblox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spooking Out&#39;s Modern Roblox Port</title>
+      <link>http://localhost:1313/blog/2022-11-02-spooking-out-modern-roblox-port/</link>
+      <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-11-02-spooking-out-modern-roblox-port/</guid>
+      <description>Hey everyone, I am proud to announce the modern Roblox port of Spooking Out! has been published to the Roblox website!&#xA;Don&amp;rsquo;t know about Spooking Out? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %}).&#xA;This means you can now play our game on modern Roblox. Oh, and we also went back and improved the experience to make playing it on mobile, controller, and Xbox just as playable and fun!&#xA;Play it here!</description>
+    </item>
+  </channel>
+</rss>

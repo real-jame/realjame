@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Jailbreaking a Kindle Voyage and installing KOReader | realjame</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+<body>
+  <header>
+    <h1>realjame</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+  </header>
+  <main>
+    
+  <h1>Jailbreaking a Kindle Voyage and installing KOReader</h1>
+
+  
+  
+  <time datetime="2023-08-18T00:00:00&#43;00:00">August 18, 2023</time>
+
+  <p>I love my 2014 Kindle Voyage, actively been using it for almost 10 years now. But after finding out update support ended a while ago, why not finally jailbreak it and install more open and featureful e-reader software?</p>
+<!-- raw HTML omitted -->
+<p>I&rsquo;m new to KOReader, so I&rsquo;ll have to see if I actually like using it as a daily driver. But it can&rsquo;t hurt to try, and at the very least, liberating the device might come in handy in the future.</p>
+<p>By the way, man I love tiny devices like this. I have an iPod Mini I&rsquo;ve been meaning to write about. I think small portable devices that serve a single purpose are pretty cool! The Kindle Voyage is the smallest one they made, with a 6-inch screen. Super thin, too. It may not have USB-C, and it may not be waterproof, but that&rsquo;s OK.</p>
+<h2 id="jailbreaking">Jailbreaking</h2>
+<p>My Kindle Voyage stopped getting updates at 5.13.6. Luckily, there is a known Kindle exploit working up to 5.14.2, so we&rsquo;re good here!</p>
+<p>After researching a bit, I found the source for the jailbreak is at a forum called MobileRead, here&rsquo;s the link to the primary resource:</p>
+<p><a href="https://www.mobileread.com/forums/showthread.php?t=320564">Tutorial: Open Sesame! (AKA., The New &amp; Improved JailBreak Index)</a></p>
+<p>Like with the previous note about [installing the latest Ruby on Debian]({% post_url /note/2023-08-16-ruby-debian %}), I will not directly provide instructions, both because that would take much longer to write, and because <strong>information can change</strong>. There might be a new exploit method, or a new security update by Amazon, or new jailbreak software to install for setup. In all of these cases, the guides will be altered, and my information will become out of date and will be unhelpful or even harmful. A brick or even a ban are near-zero chances, but I can&rsquo;t guarantee. Please read the forum posts if you&rsquo;re here to do what I did, and I&rsquo;ll just provide the basic outline of running through the tutorial here.</p>
+<h3 id="identification">Identification</h3>
+<p>Alright, I already know my device is a 2014 Kindle Voyage. All good here.</p>
+<h3 id="device-generation-concerns">Device generation concerns</h3>
+<blockquote>
+<p>The main focus of this document will be all current devices with a touchscreen, running FW 5.x.</p>
+</blockquote>
+<p>Yep, this device has a touchscreen. It&rsquo;s not running specifically version 5.x, but that&rsquo;s not important.</p>
+<h3 id="the-right-tools-for-the-job">The right tools for the job</h3>
+<p>The author makes separate threads for each software they make, but the downloads are all on one single thread for convenience. I&rsquo;ll keep it open in a separate tab.</p>
+<p><a href="https://www.mobileread.com/forums/showthread.php?t=225030">Tools: Snapshots of NiLuJe&rsquo;s hacks</a></p>
+<p>The downloads are provided as tar.xz files. Luckily, I already use 7-Zip, which can unpack this archive format. All good.</p>
+<h3 id="jailbreak">Jailbreak</h3>
+<p>Now here&rsquo;s where it begins. The current method is called &ldquo;WatchThis&rdquo;, and is found on a separate thread. Let&rsquo;s do it!</p>
+<p><a href="https://www.mobileread.com/forums/showthread.php?t=346037">Tutorial: WatchThis - Software Jailbreak for any Kindle &lt;= 5.14.2</a></p>
+<p>The procedure is slightly lengthy, but doesn&rsquo;t require anything but a charging wire that connects to USB and a PC. I have to wipe my Kindle, but all my books are on Calibre so I&rsquo;m fine with this.</p>
+<p>I put the device in &ldquo;demo mode&rdquo; which I didn&rsquo;t even know existed. Using the search bar to access these commands is super interesting, honestly&hellip;</p>
+<p>Then copy some files, do some more stuff.</p>
+<h4 id="unique-steps">Unique steps</h4>
+<p>Some stuff did not apply to my Kindle Voyage, and some did.</p>
+<ul>
+<li>I did not need to use the alternative demo mode entry method.</li>
+<li>I accidentally connected to wifi when setting up demo mode. However, this seemed to cause no issues.</li>
+<li>There was no misconfiguration lockout, no need for the &ldquo;secret gesture&rdquo; to bypass it.</li>
+<li>I was stupid and didn&rsquo;t see the part that told you to enter <code>;dsts</code> (using the homescreen searchbar) to access settings in order to install WatchThis. However, opening the triple-dot menu, selecting Legal, and choosing Safety and Compliance did the trick.</li>
+<li>An application error did occur, so I had to do the appropriate step.</li>
+</ul>
+<p>Now, the jailbreak has been installed! Back to the Open Sesame post.</p>
+<h3 id="making-sure-your-jailbreak-survives-updates">Making sure your jailbreak survives updates</h3>
+<p>I severely doubt Amazon will update the Kindle Voyage again, but you never know. It&rsquo;s as simple as installing a tool called &ldquo;JB Hotfix&rdquo; on the Snapshots thread, unpacking it to the root of your Kindle, and running Update Your Kindle from the settings. Installing this should do&hellip; some stuff that is good for you, I don&rsquo;t know.</p>
+<blockquote>
+<p>This will also take care of a few other necessary bits and bobs for the following steps.</p>
+</blockquote>
+<h3 id="installing-custom-packages">Installing custom packages</h3>
+<p>This part was extremely unintuitive. So, custom applications are installed using a tool called the &ldquo;MobileRead Package Installer&rdquo;. However, this depends on another tool called KUAL! How am I supposed to install MRPI if I have no way to install KUAL?</p>
+<p>Well, according to the author, just install MRPI as if I already installed KUAL. Oh well. Again, just extract to the root.</p>
+<h3 id="kual">KUAL</h3>
+<blockquote>
+<p>This is a GUI frontend that many custom tools will rely on, as such, we consider it a mandatory dependency.
+As it&rsquo;s designed to run across the <em>full</em> range of Kindle devices, there are four different variants of it available.</p>
+</blockquote>
+<p>Alright. For the Voyage, we will need the <code>Booklet (coplate)</code> version, as our firmware is &gt;= 5.9.</p>
+<p>Following the guide further, I dropped the .bin into the <code>mrpackages</code> directory that was added from MRPI. Then, I ran <code>;log mrpi</code> and now KUAL is installed!</p>
+<p><!-- raw HTML omitted -->TODO: Picture of my Kindle with KUAL open<!-- raw HTML omitted --></p>
+<h2 id="side-note-my-frustration-with-using-forums-for-this-stuff">Side note: My frustration with using forums for this stuff</h2>
+<p>I ran into this when figuring out how to install LineageOS onto an old Android tablet I had. These forums are just so&hellip; labyrinthine at times. Dozens of obscure forum threads, tons of digging, at least a dozen tabs open to find anything, having to pore through pages of <em>comments</em> for the real fix or solution. It gives me a headache.</p>
+<p>MobileRead was nowhere near as bad, but it still gave me a headache. I don&rsquo;t know why, it was pretty intuitive so I think I&rsquo;m just stupid. And it worked, so I can&rsquo;t complain too much. Ah well.</p>
+<h2 id="installing-koreader">Installing KOReader</h2>
+<p>Let&rsquo;s get on to the 2nd part: installing KOReader.</p>
+<p>This is stupid easy, but took me a few minutes to find out which specific variant I had to use. The proper installation instructions, which you should be using instead of this, can be found here:</p>
+<p><a href="https://github.com/koreader/koreader/wiki/Installation-on-Kindle-devices">Installation on Kindle devices</a></p>
+<p>For me, I went to their <a href="https://koreader.rocks/">website</a> and clicked Download. This should take you to a GitHub Releases page for the latest version. Scroll down to the Assets section, there are several versions to choose from. They have Android and Linux ports, as well as other e-readers, which is all in all pretty swag. Reminds me of <a href="https://www.rockbox.org/">Rockbox</a> in a lot of ways, but for ebook readers.</p>
+<p>For the Voyage, I had to use <code>koreader-kindlepw2-v&lt;VERSION&gt;.zip</code>. You might have to click &ldquo;Show all assets&rdquo; to see it in the list.</p>
+<p>Simply just unzip the archive into the root, and that&rsquo;s it! There are additional steps to install dictionaries and OCR language data, but I didn&rsquo;t grab those.</p>
+<h2 id="complete">Complete</h2>
+<p>Now I have KOReader, an e-reader software that&rsquo;s packed with far more features than the vanilla Kindle firmware. It also has built-in integration with Calibre, which is fantastic.</p>
+<p><img src="/note/media/kindle-jailbreak.jpg" alt="Picture of my jailbroken Kindle Voyage showing the KOReader About screen."></p>
+<p>I&rsquo;ll see if I like it or not, but for now, I&rsquo;m interested in seeing what else I can do with a jailbroken Kindle!</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/kindle/">Kindle</a></li>
+        <li><a href="/tags/jailbreak/">Jailbreak</a></li>
+        <li><a href="/tags/reading/">Reading</a></li>
+        <li><a href="/tags/tech/">Tech</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

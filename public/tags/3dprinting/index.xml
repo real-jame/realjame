@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3dprinting on realjame</title>
+    <link>http://localhost:1313/tags/3dprinting/</link>
+    <description>Recent content in 3dprinting on realjame</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/3dprinting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Octoprint is very cool!!!!!!!!!!!!!!!!!</title>
+      <link>http://localhost:1313/notes/2023-09-22-octoprint/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/2023-09-22-octoprint/</guid>
+      <description>Setting up a remote control / web UI for my 3D printer was a game changer, I regret doing this sooner. Give OctoPrint a try!&#xA;Do you think 3D printing is cool? My dad bought a 3D printer for the both of us last year, but it went mostly unused due to some issues with calibration and also just, kinda getting lazy.&#xA;But I set everything up again, and somehow, after doing nothing but collect dust for 4 months, it prints better than when I was actively calibrating.</description>
+    </item>
+  </channel>
+</rss>

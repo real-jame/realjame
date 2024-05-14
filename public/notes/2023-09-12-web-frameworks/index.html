@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>⚛️ React: When everything looks like a nail... | realjame</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+<body>
+  <header>
+    <h1>realjame</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a>
+    </li>
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+  </header>
+  <main>
+    
+  <h1>⚛️ React: When everything looks like a nail...</h1>
+
+  
+  
+  <time datetime="2023-09-12T00:00:00&#43;00:00">September 12, 2023</time>
+
+  <p>I&rsquo;ve been working on <a href="https://github.com/real-jame/textarea/tree/next">textarea.site</a> as a way to dive back into the beautiful and the ugly parts of front-end web development. After a few days of work, I decided to rewrite the entire project in <a href="https://svelte.dev">Svelte</a>. Surprising? Maybe not. It&rsquo;s about the right tool for the job, and here, <a href="https://react.dev">React</a> is not it.</p>
+<p>I&rsquo;m sure people have written countless times about this. But it&rsquo;s true that being versatile is one of the best skills you can have as a software developer.</p>
+<p>textarea.site is not much more than a textbox and some utility features; that&rsquo;s kinda the point of it. When I first made it a year ago, I wrote it in React. It&rsquo;s a pretty good learning project, after all. But&hellip;</p>
+<p><img src="/note/media/web-frameworks-reactsize.png" alt="212kb transferred of JavaScript for textarea.site"></p>
+<p>Loading 200kb of JavaScript for a textbox is not fun, though. There are projects where 200kb is worth it. After all, React was made by <strong>Facebook</strong>. That&rsquo;s something a large framework would be vital for, as a way to handle the complexity.</p>
+<p>But in this case? Why not just use vanilla, plain JavaScript? Or a lighter framework?</p>
+<p>I could have gone with vanilla JS, sure. The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">Web Components technologies</a> seems alright for small projects like this. But I decided to go with Svelte, just because it seemed more similar to React and was easier to pick up. So I spent a few hours going over <a href="https://learn.svelte.dev/">the tutorials</a>, and then spent a day rewriting my progress in the new framework.</p>
+<p>And now, it&rsquo;s (mostly) done! <a href="https://github.com/real-jame/textarea/commit/866cc6f7e23241cd510e35befc9975f4ca5d2ef2">This commit</a> is where I applied all the rewriting to the development branch.</p>
+<h2 id="why-svelte">Why Svelte</h2>
+<p>Svelte is pretty cool, actually. It compiles down to vanilla JS, so its effectively not very different from if I decided to write vanilla in the first place. But it provides a development experience similar to React, but even better. And just look at that size! Just under 9kb when gzipped, and 24.67kb unzipped is still a massive reduction in size.</p>
+<p><img src="/note/media/web-frameworks-sveltesize.png" alt="A terminal screenshot of the logs for a production build of the Svelte textarea.site, showing the sizes of the bundled HTML, CSS, and JS files."></p>
+<h2 id="end-of-note">End of note</h2>
+<p>Frontend development has exploded in complexity over the last decade. It&rsquo;s not inherently bad - you should just explore more than the first thing you learn, so the technologies you use in your projects are properly suited.</p>
+<p>And of course, you shouldn&rsquo;t be thinking about technologies if you want to build a project. As shown with textarea.site, rewriting or optimizing can be done later when necessary.</p>
+<p>Now I&rsquo;m just rambling&hellip; but I just wanted to share what I gained from rewriting the project. BTW, if you want to test these new updates, you can find the development build <a href="https://real-jame.github.io/textarea">here on GitHub Pages</a>. Have a good day, thanks for reading!</p>
+
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/textarea.site/">Textarea.site</a></li>
+        <li><a href="/tags/react/">React</a></li>
+        <li><a href="/tags/web/">Web</a></li>
+        <li><a href="/tags/frontend/">Frontend</a></li>
+        <li><a href="/tags/tech/">Tech</a></li>
+    </ul>
+  </div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
