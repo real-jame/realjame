@@ -1,10 +1,16 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<h1>{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+<div>
+  {{/* TODO: make this a link to tags? */}}
+  <i>{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</i>
+  <span>· {{.Section}} · <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> · {{ .WordCount }}
+    words</span>
+</div>
+
+{{ .Content }}
+{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

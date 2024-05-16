@@ -1,7 +1,15 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+{{ .Content }}
+{{ range site.RegularPages }}
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+<div>
+	{{/* TODO: make this a link to tags? */}}
+	<i>{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</i>
+	<span>· {{.Section}} · <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> · {{ .WordCount }}
+		words</span>
+</div>
+{{ .Summary }}
+{{ end }}
 {{ end }}

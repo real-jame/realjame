@@ -8,7 +8,7 @@ published: true
 ---
 I wish you well.
 
-Moving to the next quarter of this year, April to the end of June.
+Moving to the next quarter of this year, April to the end of June.<!--more-->
 
 So much inactivity, struggle, I don't know...
 

@@ -6,7 +6,7 @@ tags: [bookmark]
 date: 2024-02-26
 published: true
 ---
-> I am frustrated about being frustrated about this many things.
+"I am frustrated about being frustrated about this many things."<!--more-->
 >
 > I'm frustrated about how many days I've spent feeling frustrated.
 > I could have spent that time talking with my good friend, or taking a walk through neighborhood, or creating pieces of stunning, incredible art.

@@ -1,22 +1,19 @@
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+.sidebar {
+	float: left;
+	width: 200px;
+	margin: 20px;
+	padding: 10px;
+	border: solid;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+main {
+	max-width: 650px;
+	margin: 40px auto;
+	line-height: 1.4;
+	font-size: 16px;
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
-}
-
-a {
-  color: #00e;
-  text-decoration: none;
+	clear: both;
+	text-align: center;
 }

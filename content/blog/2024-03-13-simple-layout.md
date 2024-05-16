@@ -6,7 +6,7 @@ tags: [tech, web, news, retro]
 date: 2024-3-13
 published: true
 ---
-I made an alternate, minimal version of my website. You can find it on the sidebar, or head to [simple.realja.me](https://simple.realja.me).
+I made an alternate, minimal version of my website. You can find it on the sidebar, or head to [simple.realja.me](https://simple.realja.me).<!--more-->
 
 {% include image.html url="/blog/media/simple-home_small.png" alt="Screenshot of the simple layout" caption="Rendered in Opera 8, a browser from 2005" %}
 

@@ -6,7 +6,7 @@ tags: [tech, web]
 date: 2023-12-27
 published: true
 ---
-For the holidays, I added a simple snowing effect.
+For the holidays, I added a simple snowing effect.<!--more-->
 
 ![Recording of a falling snow effect being overlayed on my website](/note/media/snowstorm.gif)
 
