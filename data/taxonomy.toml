@@ -1,0 +1,38 @@
+[category_display_names]
+blog = "Blog Posts"
+devlog = "Devlogs"
+note = "Notes"
+
+[categoryicons]
+blog = "/icons/feedicons-color/01.png"
+devlog = "/icons/feedicons-color/25.png"
+note = "/icons/feedicons-color/16.png"
+all = "/icons/silk/feed.png"
+
+[tagicons]
+news = "/icons/silk/newspaper.png"
+personal = "/icons/silk/user_comment.png"
+roblox = "/icons/silk/brick.png"
+web = "/icons/silk/world.png"
+travel = "/icons/silk/car.png"
+prototype = "/icons/silk/cog.png"
+note = "/icons/silk/note.png"
+textarea = "/icons/silk/page_white_edit.png"
+tech = "/icons/silk/computer.png"
+thought = "/icons/silk/heart.png"
+bookmark = "/icons/silk/tag_blue.png"
+
+[callouticons]
+note = "/icons/silk/note.png"
+info = "/icons/silk/information.png"
+summary = "/icons/silk/page.png"
+todo = "/icons/silk/note_edit.png"
+tip = "/icons/silk/lightbulb.png"
+success = "/icons/silk/tick.png"
+question = "/icons/silk/help.png"
+warning = "/icons/silk/error.png"
+failure = "/icons/silk/cross.png"
+danger = "/icons/silk/exclamation.png"
+bug = "/icons/silk/bug.png"
+example = "/icons/silk/magnifier.png"
+quote = "/icons/silk/book_open.png"

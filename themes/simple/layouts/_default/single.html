@@ -1,15 +1,7 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-
-{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-{{ $dateHuman := .Date | time.Format ":date_long" }}
-
-<div>
-  {{/* TODO: make this a link to tags? */}}
-  <i>{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}</i>
-  <span>· {{.Section}} · <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> · {{ .WordCount }}
-    words</span>
-</div>
+{{/* TODO: we need to separate the layout posts use so this metadata doesn't apply to regular pages. */}}
+{{ partial "post-metadata.html" . }}
 
 {{ .Content }}
 {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

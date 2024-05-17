@@ -1,0 +1,8 @@
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<div>
+	{{/* TODO: make this a link to tags? */}}
+	<i>{{ range .Params.tags }}{{ $tagIcon := index site.Data.taxonomy.tagicons . }}<img alt=""
+			src="{{$tagIcon}}">{{.}}{{ end }}</i>
+	<span>· {{.Section}} · <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> · {{ .WordCount }} words</span>
+</div>
