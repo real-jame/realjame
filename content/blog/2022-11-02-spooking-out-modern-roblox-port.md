@@ -8,7 +8,7 @@ description: "Spooking Out has been ported to modern Roblox!"
 date: 2022-11-02
 ---
 
-Hey everyone, I am proud to announce the modern Roblox port of *Spooking Out!* has been published to the Roblox website!
+Hey everyone, I am proud to announce the modern Roblox port of *Spooking Out!* has been published to the Roblox website!<!--more-->
 
 *Don't know about Spooking Out? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %}).*
 

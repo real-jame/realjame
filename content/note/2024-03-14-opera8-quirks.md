@@ -3,7 +3,7 @@ layout: post
 category: note
 title: "2 Opera 8 quirks with the simple layout"
 tags: [tech, web, retro]
-date: 2024-3-14
+date: 2024-03-14
 published: true
 ---
 

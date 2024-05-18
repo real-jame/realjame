@@ -1,0 +1,54 @@
+:root {
+	color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-image: url(/assets/misc/starry-night512.gif);
+	}
+}
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 200px;
+
+	h1 {
+		text-align: center;
+	}
+
+	nav>* {
+		display: block;
+		width: auto;
+		text-decoration: none;
+		padding: 5px 10px;
+	}
+
+	nav>hr {
+		padding: 0;
+	}
+
+	nav>a:hover {
+		text-decoration: underline;
+	}
+
+	@media (prefers-color-scheme: light) {}
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #222
+	}
+}
+
+main,
+footer {
+	margin-left: 250px;
+	width: 50vw;
+}
+
+main {}
+
+footer {
+	text-align: center;
+}

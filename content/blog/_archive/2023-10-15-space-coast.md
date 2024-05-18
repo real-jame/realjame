@@ -5,7 +5,6 @@ title: "Robotics competition and solar eclipse and stuff"
 tags: [personal, tech, thought, robotics]
 date: 2023-10-15 20:08 -0500
 image: /blog/media/spacecoast-thumbnail.jpg
-published: true
 ---
 On Saturday, September 14, I went to the [Space Coast Showdown](http://spacecoastshowdown.com/), an off-season robotics competition with my team.
 

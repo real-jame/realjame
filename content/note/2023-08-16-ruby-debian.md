@@ -6,7 +6,7 @@ tags: [ruby, linux, tech]
 date: 2023-08-16
 published: true
 ---
-I decided to switch from running Ruby natively on Windows to WSL, because Ruby on Windows is pretty bad. Installing the rbenv tool to manage multiple versions of Ruby is simple, but in order to add (by compiling) a Ruby version, there are a few dependencies to install.
+I decided to switch from running Ruby natively on Windows to WSL, because Ruby on Windows is pretty bad. Installing the rbenv tool to manage multiple versions of Ruby is simple, but in order to add (by compiling) a Ruby version, there are a few dependencies to install.<!--more-->
 
 For context, [rbenv](https://github.com/rbenv/rbenv) is a version manager tool for Ruby. This allows me to have multiple versions of Ruby installed at once and switch between at any time. Also, Debian has very outdated packages by design. Installing Ruby through their repositories would give me 2.7.4. Along with having 4 patches since, the 2.7.x line has been [unsupported](https://www.ruby-lang.org/en/news/2023/03/30/ruby-2-7-8-released/) since March 2023.
 

@@ -3,7 +3,7 @@ Last updated: 19 November 2007
 
 _________________________________________
 Damien Guard
-http://www.damieng.com/icons/silkcompanion
+http://www.damieng.com/resources/silkcompanion
 _________________________________________
 
 This work is licensed under a
@@ -36,7 +36,7 @@ Silk icon set 1.3
 
 _________________________________________
 Mark James
-http://www.famfamfam.com/lab/icons/silk/
+http://www.famfamfam.com/lab/resources/silk/
 _________________________________________
 
 This work is licensed under a

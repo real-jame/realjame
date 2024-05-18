@@ -3,10 +3,10 @@ layout: post
 category: note
 title: "Writing without smarts"
 tags: [writing, thought]
-date: 2023-10-07 23:37 -0500
+date: 2023-10-07
 published: true
 ---
-I'm not (currently) a full-on *writer* in my eyes, but I still write a lot of blog posts, and essays in school. I've noticed I use writing apps that come without any "smart" features like spell check, auto correct, etc. But is it really a good thing to have?
+I'm not (currently) a full-on *writer* in my eyes, but I still write a lot of blog posts, and essays in school. I've noticed I use writing apps that come without any "smart" features like spell check, auto correct, etc. But is it really a good thing to have?<!--more-->
 
 I just write blog posts in my code editor, Visual Studio Code. It does the job, and writing Markdown anywhere else might cause issues because of which features are supported by which editors. It has no smart features, but I could install extensions that add some of them.
 

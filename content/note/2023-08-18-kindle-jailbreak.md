@@ -6,7 +6,7 @@ tags: [kindle, jailbreak, reading, tech]
 date: 2023-08-18
 published: true
 ---
-I love my 2014 Kindle Voyage, actively been using it for almost 10 years now. But after finding out update support ended a while ago, why not finally jailbreak it and install more open and featureful e-reader software?
+I love my 2014 Kindle Voyage, actively been using it for almost 10 years now. But after finding out update support ended a while ago, why not finally jailbreak it and install more open and featureful e-reader software?<!--more-->
 
 <!-- kindle is so swag :) -->
 

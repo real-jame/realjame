@@ -1,19 +1,46 @@
-.sidebar {
-  float: left;
-  width: 200px;
-  margin: 20px;
-  padding: 10px;
-  border: solid;
+:root {
+  color-scheme: light dark;
 }
 
-main {
-  max-width: 650px;
-  margin: 40px auto;
-  line-height: 1.4;
-  font-size: 16px;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url(/assets/misc/starry-night512.gif);
+  }
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+}
+.sidebar h1 {
+  text-align: center;
+}
+.sidebar nav > * {
+  display: block;
+  width: auto;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.sidebar nav > hr {
+  padding: 0;
+}
+.sidebar nav > a:hover {
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background-color: #222;
+  }
+}
+
+main,
+footer {
+  margin-left: 250px;
+  width: 50vw;
 }
 
 footer {
-  clear: both;
   text-align: center;
 }

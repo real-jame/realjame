@@ -3,7 +3,7 @@ layout: post
 category: blog
 title: "Simple layout, why not?"
 tags: [tech, web, news, retro]
-date: 2024-3-13
+date: 2024-03-13
 published: true
 ---
 I made an alternate, minimal version of my website. You can find it on the sidebar, or head to [simple.realja.me](https://simple.realja.me).<!--more-->

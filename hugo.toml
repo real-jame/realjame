@@ -3,3 +3,5 @@ baseURL = 'https://realja.me/'
 languageCode = 'en-us'
 title = 'realjame'
 author = "realjame"
+
+ignoreFiles = ["archive"]

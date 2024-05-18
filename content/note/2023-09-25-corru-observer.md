@@ -6,7 +6,7 @@ tags: [web, art, game, review, thought]
 date: 2023-09-25
 published: true
 ---
-corru.observer is a very strange website. It's an interactive story that's part 3D game, part visual novel, part website. [Hypertext fiction](https://en.wikipedia.org/wiki/Hypertext_fiction) at its finest.
+corru.observer is a very strange website. It's an interactive story that's part 3D game, part visual novel, part website. [Hypertext fiction](https://en.wikipedia.org/wiki/Hypertext_fiction) at its finest.<!--more-->
 
 When I stumbled across it, I basically spent the rest of my night playing it for 3 hours straight. It's right up my wheelhouse, and great stuff!! I really do not want to say *anything* about what corru.observer is about. **If you think you are interested, stop reading and play it now.**
 

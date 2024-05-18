@@ -6,7 +6,7 @@ tags: [spooking-out, roblox, tech, personal]
 date: 2023-11-01
 published: true
 ---
-November is upon us! Did you have a good Halloween? And are you aware that Spooking Out, the 2010 Roblox game by me and a friend, is now a year old (give or take a few days)?
+November is upon us! Did you have a good Halloween? And are you aware that Spooking Out, the 2010 Roblox game by me and a friend, is now a year old (give or take a few days)?<!--more-->
 <!-- I was gonna write this on Halloween, but I've been super busy with college applications the past few days. Oh well! -->
 
 We have no idea if it's been hosted and played by other people independently in this time. But a few weeks ago, my friend hosted a server for it, and people still like the game!

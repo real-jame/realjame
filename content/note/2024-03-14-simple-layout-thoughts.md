@@ -3,7 +3,7 @@ layout: post
 category: note
 title: "Thinking about the simple layout"
 tags: [personal, thought, tech, web]
-date: 2024-3-14
+date: 2024-03-14
 published: true
 ---
 I think it's kinda funny that I am motivated to make this alternate version, but not to actually write posts.<!--more-->

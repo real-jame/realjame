@@ -3,11 +3,11 @@ layout: post
 category: note
 title: "CLICK TO TEN"
 tags: [game, thought]
-date: 2023-10-04 12:17 -0500
+date: 2023-10-04
 published: true
 ---
 <!-- i promised i would write more articles, but the main reason i'm writing about something as dumb as this is because Nick of nick64.me was the aforementioned friend and he said i should write a post about the game after I played it in vc with him, so here you go :^) -->
-*Can you do it?* Click to Ten is a game I found on my friend's Steam profile - he only had 1 minute of playtime, yet he told me he beat it! How can that be? Is it really that easy to click to ten?
+*Can you do it?* Click to Ten is a game I found on my friend's Steam profile - he only had 1 minute of playtime, yet he told me he beat it! How can that be? Is it really that easy to click to ten?<!--more-->
 
 I had to find out. And the game was free, too.
 
