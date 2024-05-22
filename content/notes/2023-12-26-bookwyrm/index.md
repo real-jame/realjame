@@ -25,7 +25,7 @@ It was pretty easy to create an account. Bookwyrm is tiny in comparison to the 1
 
 Anyways, account's done. A nice feature I discovered is that you can import your books and reviews from Goodreads, or other places. I was able to import what's in my Calibre library, so after fixing a few books missing their cover, my whole personal library is here.
 
-![My Bookwyrm profile page, showing the books I plan to read, are currently reading, and have read. Plus my latest post, a status update on a book I'm reading.](/note/media/bookwyrm.jpg)
+![My Bookwyrm profile page, showing the books I plan to read, are currently reading, and have read. Plus my latest post, a status update on a book I'm reading.](images/bookwyrm.jpg)
 
 Maybe I'll make posts out of my reviews, as well as make more Bookwyrm posts if it keeps being interesting.
 

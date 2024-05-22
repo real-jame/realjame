@@ -8,7 +8,7 @@ published: true
 ---
 For the holidays, I added a simple snowing effect.<!--more-->
 
-![Recording of a falling snow effect being overlayed on my website](/note/media/snowstorm.gif)
+![Recording of a falling snow effect being overlayed on my website](images/snowstorm.gif)
 
 It's not actually my code, but I did make a simple control to toggle the snow effect.
 
@@ -31,7 +31,7 @@ I replaced the snowflake symbol (❅) used with a simple white circle emoji (⚪
 }
 ```
 
-## Coding in the on/off toggle
+## Implementing an on/off toggle
 
 Here's my code.
 

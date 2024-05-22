@@ -5,3 +5,5 @@ title = 'realjame'
 author = "realjame"
 
 ignoreFiles = ["archive"]
+[frontmatter]
+date = [':filename', ':default']

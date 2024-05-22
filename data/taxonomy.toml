@@ -1,7 +1,7 @@
 [category_display_names]
-blog = "Blog Posts"
-devlog = "Devlogs"
-note = "Notes"
+blog = "blog"
+devlog = "devlog"
+notes = "note"
 
 [categoryicons]
 blog = "/resources/feedicons-color/01.png"

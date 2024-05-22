@@ -8,15 +8,15 @@ published: true
 ---
 I made an alternate, minimal version of my website. You can find it on the sidebar, or head to [simple.realja.me](https://simple.realja.me).<!--more-->
 
-{% include image.html url="/blog/media/simple-home_small.png" alt="Screenshot of the simple layout" caption="Rendered in Opera 8, a browser from 2005" %}
+![Screenshot of the simple layout](images/simple-home_small.png "Rendered in Opera 8, a browser from 2005!")
 
 Now, you can read my website on practically any web browser and device ever made!
 
-{% include image.html url="/blog/media/simple-nav_small.jpg" alt="The navigation menu displayed on a red Nintendo DSi" caption="Running on a Nintendo DSi!" %}
+![The navigation menu displayed on a red Nintendo DSi](images/simple-nav_small.jpg "Running on a Nintendo DSi!")
 
-## The ultimate barebones
+## Pretty simple
 
-It was surprisingly simple to do: my website is generated using Jekyll, so I was able to make an alternate "theme"/layout for it just by changing the HTML and CSS files.
+It was surprisingly easy to do: my website is generated using a static site generator, so I was able to make an alternate "theme" (layout) for it with new HTML and CSS.
 
 And to achieve this look, I deleted the complex CSS files. I made a new one that clocks in at just over 40 lines to do the bare minimum: separate the sidebar, center things, etc.
 
