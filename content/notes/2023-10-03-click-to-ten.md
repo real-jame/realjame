@@ -13,9 +13,7 @@ I had to find out. And the game was free, too.
 
 Look at the trailer, this game *has* to be good!
 
-<video width="854" height="480" controls>
-  <source src="/note/media/click-to-ten.webm" type="video/mp4">
-</video>
+<https://www.youtube.com/watch?v=WqS-r4YuIk0>
 
 I installed it, and the worry set in as I slowly clicked.
 

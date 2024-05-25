@@ -1,3 +1,4 @@
+{{ if or (eq .Section "notes") (eq .Section "blog") }}
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
 {{ $categoryDisplayName := index site.Data.taxonomy.category_display_names
@@ -11,3 +12,4 @@
 			$dateHuman
 			}}</time> · {{ .WordCount }} words</span>
 </div>
+{{end}}
