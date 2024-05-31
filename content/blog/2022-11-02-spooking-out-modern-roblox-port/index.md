@@ -10,17 +10,15 @@ date: 2022-11-02
 
 Hey everyone, I am proud to announce the modern Roblox port of *Spooking Out!* has been published to the Roblox website!<!--more-->
 
-*Don't know about Spooking Out? Read the [previous article]({% post_url /blog/2022-10-24-introducing-spooking-out %}).*
-
 This means you can now play our game on modern Roblox. Oh, and we also went back and improved the experience to make playing it on mobile, controller, and Xbox just as playable and fun!
 
 ### [Play it here!](https://www.roblox.com/games/11373614692/Spooking-Out)
 
-*[Or check out the Novetus 2010L version!]({% post_url /blog/2022-10-24-introducing-spooking-out %})*
+*Don't know about Spooking Out? Wanna check out the Novetus 2010L version? Check out the [previous article](/blog/introducing-spooking-out)*
 
 There are also 5 badges -- essentially, achievements. Here's one of them:
 
-{% include image.html url="/blog/media/SpookingOutModernBadge.png" alt="Brown bag with the word 'Tix' printed on it, overlayed on a Spooking Out map screenshot with an orange-yellow filter." caption="Can you get them all?" x="" y="" %}
+![Brown bag with the word "Tix" printed on it, overlayed on a Spooking Out map screenshot with an orange-yellow filt](images/SpookingOutModernBadge.png Can you get them all?)
 
 ## TL;DR
 
@@ -39,7 +37,7 @@ Here's a list of this port's additions/changes to the 2010L Novetus version.
 
 You might notice that I am publishing this article on November 1, which is not, in fact, Halloween. Except I DID RELEASE IT ON TIME!
 
-![Screenshot of my Tweet with a text body of "LET IT BE KNOWN THAT I HAVE RELEASED 'Spooking Out!' ON OCTOBER 31 2022 (Halloween) AND NOT November 1 2022 (not Halloween). literally turning it in at 11:59 pm like it's homework lol. #Roblox #RobloxDev". A screenshot image of the game page for Spooking Out on modern Roblox is attached to the Tweet. The tweet is dated October 31, 2022 at 11:48 PM.](/blog/media/SpookingOutModernTweet.png)
+![Screenshot of my Tweet with a text body of "LET IT BE KNOWN THAT I HAVE RELEASED 'Spooking Out!' ON OCTOBER 31 2022 (Halloween) AND NOT November 1 2022 (not Halloween). literally turning it in at 11:59 pm like it's homework lol. #Roblox #RobloxDev". A screenshot image of the game page for Spooking Out on modern Roblox is attached to the Tweet. The tweet is dated October 31, 2022 at 11:48 PM.](/images/SpookingOutModernTweet.png)
 
 Though, I'm releasing this a few days late. Sorry... some things got in the way, schoolwork being one of them. I hope you still enjoy the game in it's own right!
 
@@ -64,7 +62,7 @@ This is why exploiting is so rampant on old Roblox servers (besides the fact new
 
 This is fun and easy for developers to work with! But, exploiters are annoying too, of course. Roblox added this "Filtering Enabled" thing some years afterwards, where the server pretty much does not trust the client at all. If the client wants to place a bomb or kill a player, they have to **ask the server** to do it by activating a "RemoteEvent" or "RemoteFunction", which signals a function in a server-sided script to run.
 
-![A diagram of the Filtering Enabled flow in modern Roblox. A LocalScript has an action: "Player presses 'Buy' button". A remote event links an arrow from the LocalScript to the (server) Script's flowchart: "Does player have enough money?" A "NO" arrow links to "Don't give item", and a "YES" arrow links to "Give item to player".](/blog/media/SpookingOutModernRemoteEventFlow.png)
+![A diagram of the Filtering Enabled flow in modern Roblox. A LocalScript has an action: "Player presses 'Buy' button". A remote event links an arrow from the LocalScript to the (server) Script's flowchart: "Does player have enough money?" A "NO" arrow links to "Don't give item", and a "YES" arrow links to "Give item to player".](/images/SpookingOutModernRemoteEventFlow.png)
 
 ---
 
@@ -105,13 +103,13 @@ The reason I did this was due to a tap anywhere on the screen triggering the Mou
 
 This is what the gui looked like as-is from the 2010L version on mobile.
 
-![A mobile screenshot with the menu buttons overlapping with the banner and chat UI, and the charge UI overlapping with the tools list.](/blog/media/SpookingOutModernGuiBefore.png)
+![A mobile screenshot with the menu buttons overlapping with the banner and chat UI, and the charge UI overlapping with the tools list.](/images/SpookingOutModernGuiBefore.png)
 
 Now here's after my redesign.
 
-![A mobile screenshot with the menu buttons positioned vertically on the left center side of the screen and the charge UI placed neatly above the tools list.](/blog/media/SpookingOutModernGuiAfter.png)
+![A mobile screenshot with the menu buttons positioned vertically on the left center side of the screen and the charge UI placed neatly above the tools list.](/images/SpookingOutModernGuiAfter.png)
 
-![A screenshot of the menu buttons, with a controller](/blog/media/SpookingOutModernControllerIndicators.png)
+![A screenshot of the menu buttons, with a controller](/images/SpookingOutModernControllerIndicators.png)
 
 - Moved menu buttons to the center left side of the screen
 - Made the charge gui bigger and positioned higher up to not overlap with the tools menu on mobile
@@ -135,7 +133,7 @@ Of course, I could have worked more. I could have ported it to [ContextActionSer
 Here's how everything came together, allowing me to play our game on modern Roblox, on my phone!
 
 <video height="320" width="480" controls>
-  <source src="/blog/media/SpookingOutModernGameplay.mp4" type="video/mp4">
+  <source src="/images/SpookingOutModernGameplay.mp4" type="video/mp4">
 </video>
 
 I've tried making modern Roblox projects before, but like with old Roblox, this is my first time releasing a finished product. All in all, it was fun. We hope you continue enjoying it just as much as we did porting it!

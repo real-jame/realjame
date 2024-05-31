@@ -3,12 +3,12 @@ layout: post
 category: blog
 title: "Introducing Spooking Out!"
 tags: [news, roblox, classic-roblox, spooking-out, tech, thought]
-image: /blog/media/SpookingOutThumbnail.png
+image: /images/SpookingOutThumbnail.png
 description: "I made a brand new game for old Roblox with the help of a friend!"
 date: 2022-10-24
 ---
 
-![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game; a bay filled with ghosts.](/blog/media/SpookingOutThumbnail.png)<!--more-->
+![Thumbnail image for Spooking Out! featuring the game title overlayed on a blurred background of a map from the game; a bay filled with ghosts.](/images/SpookingOutThumbnail.png)<!--more-->
 
 Hello! I'm proud to announce a brand new game made for the classic Roblox engine (2010 specifically), made in collaboration with my friend, Tobu.fi.
 
@@ -41,14 +41,14 @@ Speaking of which, secondary items! You can choose a 2nd item to equip alongside
 ## Screenshots
 
 <video width="1280" height="720" controls>
-  <source src="/blog/media/SpookingOutGameplay.mp4" type="video/mp4">
+  <source src="/images/SpookingOutGameplay.mp4" type="video/mp4">
 </video>
 
-![A player standing on a dirt pathway in a campsite surrounded by a forest, and ghosts.](/blog/media/SpookingOutScreenshot-1.png)
+![A player standing on a dirt pathway in a campsite surrounded by a forest, and ghosts.](/images/SpookingOutScreenshot-1.png)
 
-![A player attacking a ghost with the Skullshot tool in a city.](/blog/media/SpookingOutScreenshot-2.png)
+![A player attacking a ghost with the Skullshot tool in a city.](/images/SpookingOutScreenshot-2.png)
 
-![A player sitting on a bench alone in the lobby, a peaceful grassy field at night next to a forest with autumn leaves and a campfire.](/blog/media/SpookingOutScreenshot-3.png)
+![A player sitting on a bench alone in the lobby, a peaceful grassy field at night next to a forest with autumn leaves and a campfire.](/images/SpookingOutScreenshot-3.png)
 
 ## What is Novetus?
 
