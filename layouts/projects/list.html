@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1>Projects</h1>
+  <ul>
+    {{ range .Data.Pages }}
+      <li>
+        <h2>{{ .Title }}</h2>
+        <p><strong>Started:</strong> {{ .Params.startDate }}</p>
+        <p><strong>Ended:</strong> {{ .Params.endDate }}</p>
+        <p><strong>Status:</strong> {{ .Params.status }}</p>
+        <p>{{ .Content }}</p>
+        {{ if .Params.images }}
+          <div class="project-images">
+            {{ range .Params.images }}
+              <img src="{{ . }}" alt="{{ $.Title }}">
+            {{ end }}
+          </div>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
