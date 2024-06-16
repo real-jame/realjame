@@ -1,3 +1,7 @@
+@font-face {
+  font-family: REM;
+  src: url(/resources/fonts/REM/REM-VariableFont_wght.ttf);
+}
 :root {
   color-scheme: light dark;
 }
@@ -43,4 +47,13 @@ footer {
 
 footer {
   text-align: center;
+}
+
+.postindex-header {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+}
+
+.postindex div {
+  margin: 0;
 }

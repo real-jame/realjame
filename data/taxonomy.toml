@@ -1,5 +1,6 @@
 [category_display_names]
 blog = "blog"
+bookmarks = "bookmark"
 devlog = "devlog"
 notes = "note"
 

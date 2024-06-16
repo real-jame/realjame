@@ -1,6 +1,5 @@
 ---
 layout: post
-category: note
 title: "🔗🎞️ Cheesy Hfj: 'i am frustrated'"
 tags: [bookmark]
 date: 2024-02-26

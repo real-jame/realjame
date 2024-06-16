@@ -1,8 +1,19 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-{{ range .Pages }}
-<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }}
+{{ range .Pages }}{{ if .Date }}
+<div class="postindex">
+	{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+	{{ $dateHuman := .Date | time.Format ":date_long" }}
+	<h2 class="postindex-header"><a href="{{ .RelPermalink }}">{{ .LinkTitle
+			}}</a></h2>
+	{{ partial "post-metadata.html" . }}
+	{{ .Summary }}
+</div>
 {{ end }}
 {{ end }}
+{{ end }}
+
+{{/* TODO: don't display the type of post for these indexes where it only lists
+1 section. how do we pass variables to partials, so i can ask it not to do that
+here */}}

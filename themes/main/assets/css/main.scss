@@ -1,3 +1,8 @@
+@font-face {
+	font-family: REM;
+	src: url(/resources/fonts/REM/REM-VariableFont_wght.ttf);
+}
+
 :root {
 	color-scheme: light dark;
 }
@@ -51,4 +56,21 @@ main {}
 
 footer {
 	text-align: center;
+}
+
+// .postindex {
+// 	border: solid #222 5px;
+// 	padding: 2px;
+// 	margin-bottom: 1em;
+// }
+
+.postindex-header {
+	// font-family: Verdana;
+	// font-weight: 600;
+	margin-bottom: 8px;
+	font-size: 1.25em;
+}
+
+.postindex div {
+	margin: 0;
 }
