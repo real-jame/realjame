@@ -30,6 +30,9 @@
 .sidebar nav > hr {
   padding: 0;
 }
+.sidebar nav > a > img {
+  margin-right: 4px;
+}
 .sidebar nav > a:hover {
   text-decoration: underline;
 }
@@ -40,9 +43,19 @@
 }
 
 main,
+footer,
+nav {
+  font-size: 18px;
+}
+
+main,
 footer {
   margin-left: 250px;
   width: 50vw;
+}
+
+main {
+  line-height: 1.2;
 }
 
 footer {

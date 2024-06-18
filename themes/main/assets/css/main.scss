@@ -35,6 +35,10 @@
 		padding: 0;
 	}
 
+	nav>a>img {
+		margin-right: 4px;
+	}
+
 	nav>a:hover {
 		text-decoration: underline;
 	}
@@ -47,12 +51,20 @@
 }
 
 main,
+footer,
+nav {
+	font-size: 18px;
+}
+
+main,
 footer {
 	margin-left: 250px;
 	width: 50vw;
 }
 
-main {}
+main {
+	line-height: 1.2;
+}
 
 footer {
 	text-align: center;
