@@ -1,8 +1,8 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-{{/* TODO: we need to separate the layout posts use so this metadata doesn't apply to regular pages. */}}
+{{/* TODO: we need to separate the layout posts use so this metadata doesn't
+apply to regular pages. */}}
 {{ partial "post-metadata.html" . }}
 
 {{ .Content }}
-{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

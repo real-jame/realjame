@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ .Content }}
-{{ range site.RegularPages }} {{ if .Date }}
+{{ range first 5 site.RegularPages }} {{ if .Date }}
 <div class="postindex">
 	{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 	{{ $dateHuman := .Date | time.Format ":date_long" }}

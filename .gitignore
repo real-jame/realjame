@@ -1,3 +1,4 @@
 /public/
 /resources/
 *.7z
+/build/
