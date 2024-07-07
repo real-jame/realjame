@@ -3,7 +3,7 @@ layout: post
 category: blog
 title: "(Video Draft) Full introduction to classic Roblox gamedev with Novetus"
 tags: [roblox, classic-roblox, tech, lua, video-draft]
-images: [thumbnail.png]
+images: [images/thumbnail.png]
 date: 2023-07-06
 ---
 A tutorial on making a game in the 2009 Roblox engine from scratch. It's the script draft for a video I plan to make.
