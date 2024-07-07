@@ -3,12 +3,15 @@ layout: post
 category: blog
 title: "(Video Draft) Full introduction to classic Roblox gamedev with Novetus"
 tags: [roblox, classic-roblox, tech, lua, video-draft]
-image: /blog/media/SpookingOutThumbnail.png
+images: [thumbnail.png]
 date: 2023-07-06
 ---
 A tutorial on making a game in the 2009 Roblox engine from scratch. It's the script draft for a video I plan to make.
 
 <!--more-->
+
+![
+Gameplay screenshot of a player shooting a laser nearby another player, with falling boulders, trees, and stacks of bricks in the background. There is the caption of "this is a draft for a video, but i want to publish it early. enjoy the bad thumbnail :D"](images/thumbnail.png)
 
 ## Author's note
 

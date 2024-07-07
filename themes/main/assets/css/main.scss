@@ -7,9 +7,10 @@
 	color-scheme: light dark;
 	--dragonfly-blue: #d0e1ee;
 	--dragonfly-turquoise: #26645b;
+	--main-font: 'Times New Roman', Times, serif;
 
 	a {
-		transition: all 30ms ease-in;
+		transition: all 30ms;
 	}
 
 	a:hover {
@@ -25,7 +26,8 @@
 }
 
 body {
-	font-family: 'Times New Roman', Times, serif;
+	box-sizing: border-box;
+	font-family: var(--main-font);
 	margin: 2% 2%;
 }
 
@@ -192,6 +194,7 @@ main {
 		float: unset;
 		width: unset;
 		padding: unset;
+		max-width: 80ch;
 	}
 }
 

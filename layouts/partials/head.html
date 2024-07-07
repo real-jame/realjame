@@ -1,5 +1,11 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Hello! It's my website and blog, where I like to write about technology, games, other stuff, and my life. What else do I really put here?">
+{{hugo.Generator}}
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RSS">
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title
 	site.Title }}{{ end }}</title>
