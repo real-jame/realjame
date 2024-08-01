@@ -1,0 +1,37 @@
+<h2><label for="fonts">Change font</label></h2>
+<select name="fonts" id="fonts" onchange="updateFont(this.value);">
+	<option value="arial">Arial (sans-serif)</option>
+	<option value="comicsans">Comic Sans MS (lol)</option>
+	<option value="consolas">Consolas (monospace)</option>
+	<option value="timesnewroman">Times New Roman (serif, default)</option>
+	<option value="verdana">Verdana (sans-serif)</option>
+</select>
+<p>i'll add cooler fonts later</p>
+<script>
+	"use strict";
+	const select = document.getElementById("fonts");
+
+	function updateFont(font = "timesnewroman") {
+		localStorage.setItem("font", font);
+		select.value = font;
+		switch (font) {
+			case "arial":
+				document.body.style.fontFamily = "Arial";
+				break;
+			case "comicsans":
+				document.body.style.fontFamily = "Comic Sans MS";
+				break;
+			case "consolas":
+				document.body.style.fontFamily = "Consolas, monospace";
+				break;
+			case "timesnewroman":
+				document.body.style.fontFamily = "Times New Roman";
+				break;
+			case "verdana":
+				document.body.style.fontFamily = "Verdana";
+				break;
+		}
+	}
+
+	updateFont(localStorage.getItem("font"));
+</script>

@@ -4,10 +4,9 @@
 // }
 
 :root {
-	color-scheme: light dark;
+	color-scheme: dark;
 	--dragonfly-blue: #d0e1ee;
 	--dragonfly-turquoise: #26645b;
-	--main-font: 'Times New Roman', Times, serif;
 
 	a {
 		transition: all 30ms;
@@ -19,16 +18,11 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background-image: url(/resources/misc/starry-night512.gif);
-	}
-}
-
 body {
 	box-sizing: border-box;
-	font-family: var(--main-font);
+	font-family: 'Times New Roman', Times, serif;
 	margin: 2% 2%;
+	background-image: url(/resources/misc/starry-night512.gif);
 }
 
 .highlight pre {

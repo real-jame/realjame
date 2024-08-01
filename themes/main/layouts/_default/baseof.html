@@ -22,13 +22,7 @@
       </main>
       <div class="sidebar">
         <div class="sticky">
-          {{ if and (not .IsSection) (or (eq .Section "notes") (eq .Section
-          "blog")
-          (eq .Section "bookmarks")) }}
-          <div class="sidebar-bg">{{ partial "sidebar-tags.html" . }}</div>
-          <div class="sidebar-bg sidebar-toc">{{ partial "sidebar-toc.html" .
-            }}</div>
-          {{ end }}
+          {{partial "right-sidebar.html" . }}
         </div>
       </div>
     </div>

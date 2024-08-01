@@ -1,0 +1,15 @@
+<script src="https://unpkg.com/htmx.org@2.0.1"></script>
+{{ if ne hugo.Environment "production" }}
+<script>
+	htmx.logAll();
+	htmx.config.selfRequestsOnly = false;
+</script>
+{{ end }}
+
+<div class="nowplaying">
+	<img src="placeholder" alt="album cover art">
+	<p>ascension</p>
+	<p>open this wall - berlioz - 2024</p>
+</div>
+<button hx-get="http://localhost:1323/nowplaying"
+	hx-target="previous">Refresh</button>
