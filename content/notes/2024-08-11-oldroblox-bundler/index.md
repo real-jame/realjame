@@ -92,7 +92,7 @@ This is surely over-engineered, but it's fun and that's what matters!
 Fixed typos, I rushed this post out before I had to leave for work lol. So it was basically just an infodump (it still is... just with less typos)
 
 Also, I got some advice after sharing this to the Client Search Discord about how I should go about generating the numeric filenames for ORRH. (Thanks, Lanausse!)
-- New assets should use the 580954-999999 ID range to avoid overriding existing Roblox assets, due to Roblox skipping the ID count to 1000000.
+- Custom assets[^assets] should use the 580954-999999 ID range to avoid overriding existing Roblox assets, due to Roblox skipping the ID count to 1000000.
 - The 0-769 range is also available, but smaller, and was used in the past for models.
 
 With that in mind, a smarter approach to generating IDs rather than just being totally random numbers is to base it off the file data - get a hash of the file and convert it to an integer, this would likely be out of the unused range, but maybe a simple modulo operation could fix that??
@@ -100,5 +100,6 @@ With that in mind, a smarter approach to generating IDs rather than just being t
 Doing this would mean your assets keep the same IDs between builds, I don't know how beneficial that really is, but there you go. Maybe I'll implement it anyways if it's easy.
 
 [^meshversions]: You can convert meshes to the supported versions by using the mesh converter tool in the Novetus SDK. I don't know if there are any alternatives.
-[^minify]: Minifying the XML and Lua is something I've thought about for a while, and it would make an interesting post seeing how much data is saved. No off-the-shelf C# library for this, so I'd have to port it from the JS libraries or something lol. 
+[^minify]: Minifying the XML and Lua is something I've thought about for a while, and it would make for an interesting blog post seeing how much space is saved. But there isn't an off-the-shelf C# library for this, so I'd have to port it from the JS libraries or something lol. It's just regex (at least for the XML minifier), will it really be that hard? (famous last words) 
 [^compression]: ORRH and Novetus snapshots support compressed maps by decompressing them on the fly. Novetus built-in maps use [bz2](https://en.wikipedia.org/wiki/Bzip2), while ORRH uses [gzip](https://en.wikipedia.org/wiki/Gzip). I haven't tested if they support the vice-versa format.
+[^assets]: ORRH asset packs mainly exist to provide assets where the web proxy can't: music, as well as models for games that insert those (e.g. Catalog Heaven). Correct me if I'm wrong on that. This is why you have to use fake roblox.com asset links and numeric filenames.
