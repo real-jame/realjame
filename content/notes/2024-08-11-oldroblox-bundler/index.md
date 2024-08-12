@@ -6,11 +6,13 @@ tags: [tech, roblox, oldroblox, devops]
 # images: [images/thumbnail.png]
 date: 2023-08-11
 ---
-When I say musing, I mean like this. (Pondering, too)
+I'm musing. Pondering, even. And when I say that, I mean like this.
 
 ![The meme image of the werewolf sitting and thinking](images/wolf.bmp)
 
 I've been thinking about if it'd be worth it to make a tool that can make it easier to distribute versions of my games for both the [Novetus](https://bitl.itch.io/novetus) and [Only Retro Roblox Here](https://onlyretrorobloxhere.itch.io/orrh) launchers. Specifically, this tool would manage the game's assets - the images, music, and other media.
+
+Edits are at the bottom of the post
 
 ## Assets, basically
 
@@ -22,7 +24,7 @@ However, Roblox has changed how and *if* assets can be received over recent year
 
 - The asset endpoint was changed to be on the new `assetdelivery.roblox.com` subdomain, and as far as I know, requires HTTPS.
 - Sounds longer than 7 seconds are [now forced to be private](https://devforum.roblox.com/t/new-asset-privacy-and-permissions-features-for-audio-and-video/2725248), mainly due to copyright reasons.
-- Users gained the ability to upload meshes in 2016, but even then, you can't use them in your old Roblox game because of the updates Roblox has made to their custom format. (You need to use the mesh converter built into Novetus, or something else idk)
+- Users gained the ability to upload meshes in 2016, but even then, you can't use them in your old Roblox game because of the updates Roblox has made to their custom format[^meshversions].
 
 ORRH(I think?) and Novetus snapshot versions feature a web proxy that can intercept Roblox asset requests from old clients and pull them from these modern endpoints, but these issues still apply. Also, it's not on Novetus stable 1.3, and more importantly, why deal with Roblox's website and moderation?? The web proxies aren't designed for this use case, they're basically a way to fix assets for old games.
 
@@ -32,9 +34,9 @@ So, host assets locally. [This is supported](https://rbxlegacy.wiki/index.php/Co
 
 Novetus provides a folder called `shareddata` designed for this. For my new game, [Blox Party](/projects/bloxparty), I created a new folder called "bloxparty" and put all my image and audio assets in there. Then, I can use it in game with, for example, `rbxasset://../../../shareddata/bloxparty/music.mp3` as the URL.
 
-As for ORRH, there is an easier way to distribute and use local assets in your games, called **asset packs**. I haven't looked into it much, but it basically lets you override certain Roblox asset IDs with the web proxy. So when the web proxy intercepts the request, instead of pulling it from Roblox's servers, it uses the local copy stored in your asset pack. An example URL would be `https://roblox.com/?asset`
+As for ORRH, there is an easier way to distribute and use local assets in your games, called **asset packs**. I haven't looked into it much, but it basically lets you override certain Roblox asset IDs with the web proxy. So when the web proxy intercepts the request, instead of pulling it from Roblox's servers, it uses the local copy stored in your asset pack. Example: `https://roblox.com/asset?id=12345` would correspond to `12345.png`, or `12345.wav`, or `12345.mesh`, etc. in your asset pack's folder. (File extension doesn't matter, only the filename corresponding to the ID)
 
-ORRH asset packs also contain metadata for the name, description, author, and version of the pack, as well as what clients it should apply to. Also, 
+ORRH asset packs also contain metadata (`AssetPack.json`) for the name, description, author, and version of the pack, as well as what clients it should apply to. Also, 
 
 This is great and all, but here's why I want to automate it:
 
@@ -68,18 +70,35 @@ The program would have a few features:
 - Build assets for release:
 	- Make a `build` directory in the project, and then `build/novetus` and `build/orrh`.
 	- For Novetus: no effort needed for shareddata, the assets folder can be copied directly (but renamed to be the project name)
-	- For ORRH: generate random numeric IDs for the assets, and generate asset pack metadata (`AssetPack.json`) based off the project metadata.
+	- For ORRH: build the asset pack by renaming assets to random numeric file names, and generate a metadata file based off the project metadata.
 	- Rewrite URLs in the RBXL as necessary and copy to their build directories.
-	- **Could also minify the RBXL file's XML (and Lua scripts inside) and/or compress to a .rbxl.gz file**
+	- Also for Novetus, optional: generate a description .txt file for the map that will show in Novetus's map selection menu.
+	- **Could also minify the RBXL file's XML (and Lua scripts inside)[^minify] and/or compress the RBXL file**[^compression]
 
 ## I can make this
 
-This isn't a request for someone out there to make it, I can make it. I just wanted to note my ideas down and make a plan, just out in the open.
+This isn't a request for someone out there to make it, I can make it. I just wanted to note my ideas down and make a plan, but out in the open.
 
-I'll probably write it in C#, beacuse I like C# and want to use it more, lol.
+I'll definitely be writing it in C#, because I like C# and want to use it more, lol.
 
-It will be a terminal app, because that's all I need, but I suppose a GUI could be made later.
+It will be a terminal app, because that's all *I* need, but I suppose a GUI could be made later.
 
-It could also have a native MacOS and Linux version (even though these Roblox versions are only on Windows, you can use Wine). [Even the GUI can be cross-platform](https://avaloniaui.net/).
+It could also have a native MacOS and Linux version (although these Roblox versions are Windows-exclusive, you can run them on Wine). [Even the GUI can be cross-platform](https://avaloniaui.net/).
 
 This is surely over-engineered, but it's fun and that's what matters!
+
+## 8/12 update
+
+Fixed typos, I rushed this post out before I had to leave for work lol. So it was basically just an infodump (it still is... just with less typos)
+
+Also, I got some advice after sharing this to the Client Search Discord about how I should go about generating the numeric filenames for ORRH. (Thanks, Lanausse!)
+- New assets should use the 580954-999999 ID range to avoid overriding existing Roblox assets, due to Roblox skipping the ID count to 1000000.
+- The 0-769 range is also available, but smaller, and was used in the past for models.
+
+With that in mind, a smarter approach to generating IDs rather than just being totally random numbers is to base it off the file data - get a hash of the file and convert it to an integer, this would likely be out of the unused range, but maybe a simple modulo operation could fix that??
+
+Doing this would mean your assets keep the same IDs between builds, I don't know how beneficial that really is, but there you go. Maybe I'll implement it anyways if it's easy.
+
+[^meshversions]: You can convert meshes to the supported versions by using the mesh converter tool in the Novetus SDK. I don't know if there are any alternatives.
+[^minify]: Minifying the XML and Lua is something I've thought about for a while, and it would make an interesting post seeing how much data is saved. No off-the-shelf C# library for this, so I'd have to port it from the JS libraries or something lol. 
+[^compression]: ORRH and Novetus snapshots support compressed maps by decompressing them on the fly. Novetus built-in maps use [bz2](https://en.wikipedia.org/wiki/Bzip2), while ORRH uses [gzip](https://en.wikipedia.org/wiki/Gzip). I haven't tested if they support the vice-versa format.
