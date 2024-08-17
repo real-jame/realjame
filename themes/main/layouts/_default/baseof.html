@@ -15,10 +15,18 @@
               content</a></p>
           <nav class="sidebar-bg sidebar-nav">{{ partial "sidebar-nav.html" .
             }}</nav>
+          <div class="sidebar-bg">{{ partial "sidebar-88x31s.html" .
+            }}</div>
         </div>
       </div>
       <main id="main">
         {{ block "main" . }}{{ end }}
+        {{/* awful but its so the sidebar doesnt create blank space between the
+        end of content & footer */}}
+        <br>
+        <footer>
+          {{ partial "footer.html" . }}
+        </footer>
       </main>
       <div class="sidebar">
         <div class="sticky">
@@ -26,9 +34,6 @@
         </div>
       </div>
     </div>
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
   </body>
 
 </html>
