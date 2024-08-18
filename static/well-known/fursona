@@ -1,0 +1,18 @@
+{
+	"sonas": [
+		{
+			"name": "Dewdrop",
+			"pronouns": "he/him",
+			"gender": "Male",
+			"species": "Dragonfly",
+			"description": "A blue dasher dragonfly!",
+			"avatar": "https://realja.me/resources/misc/me.png",
+			"colors": [
+				"#ecf8ff",
+				"#c0e9ff",
+				"#68d1a2",
+				"#1f2128"
+			]
+		}
+	]
+}

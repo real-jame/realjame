@@ -19,15 +19,6 @@ I'm on a bunch of other sites, but you can reach me best via Mastodon, Discord, 
 - By e-mail, I'm james@realja.me
 - On Discord, I'm @realjame
 
-## Oomfie buttons
-
-I love my oomfs on Mastodon but I don't wanna make my footer gigantic, sorry yall 🙏🥹
-**7/5 update: I'm gonna move this to the sidebar sometime soon!**
-
-{{< info-oomfs >}}
-
-IF I MISSED YOU PING ME sorry
-
 ## Credits
 
 - This website was created with [Hugo](https://gohugo.io)!

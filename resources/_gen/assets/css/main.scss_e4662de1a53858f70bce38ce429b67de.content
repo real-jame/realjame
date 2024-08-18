@@ -10,6 +10,9 @@
   color: var(--dragonfly-blue);
   background-color: var(--dragonfly-turquoise);
 }
+:root img[height="16"][width="16"] {
+  image-rendering: pixelated;
+}
 
 body {
   box-sizing: border-box;

@@ -16,6 +16,10 @@
 		color: var(--dragonfly-blue);
 		background-color: var(--dragonfly-turquoise);
 	}
+
+	img[height="16"][width="16"] {
+		image-rendering: pixelated;
+	}
 }
 
 body {
