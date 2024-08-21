@@ -6,11 +6,11 @@ tags: [tech, roblox, oldroblox, devops]
 # images: [images/thumbnail.png]
 date: 2023-08-11
 ---
+I've been thinking about if it'd be worth it to make a tool that can make it easier to distribute versions of my games for both the [Novetus](https://bitl.itch.io/novetus) and [Only Retro Roblox Here](https://onlyretrorobloxhere.itch.io/orrh) launchers. Specifically, this tool would manage the game's assets - the images, music, and other media.<!--more-->
+
 I'm musing. Pondering, even. And when I say that, I mean like this.
 
 ![The meme image of the werewolf sitting and thinking](images/wolf.bmp)
-
-I've been thinking about if it'd be worth it to make a tool that can make it easier to distribute versions of my games for both the [Novetus](https://bitl.itch.io/novetus) and [Only Retro Roblox Here](https://onlyretrorobloxhere.itch.io/orrh) launchers. Specifically, this tool would manage the game's assets - the images, music, and other media.
 
 Edits are at the bottom of the post
 
