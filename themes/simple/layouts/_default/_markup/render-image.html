@@ -1,4 +1,9 @@
-<figure>
-	<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
-	<figcaption>{{ .Title }}</figcaption>
-</figure>
+{{/* ugly and wont format right but works */}}
+{{with .Page.Resources.Get .Destination}}
+{{$image := .Process "gif"}}
+<img src="{{ $image.RelPermalink }}"
+	{{else}}
+	<img src="{{ .Destination | safeURL }}"
+	{{end}}
+	{{- with .Text }} alt="{{ . }}" {{ end -}}
+	{{- with .Title }} title="{{ . }}" {{ end -}}>
