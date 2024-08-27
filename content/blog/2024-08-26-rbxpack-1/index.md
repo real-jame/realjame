@@ -3,10 +3,12 @@ layout: post
 category: note
 title: "Progress and ideas for rbxpack"
 tags: [tech, oldroblox, devlog]
-date: 2024-08-25
+date: 2024-08-26
 published: true
 ---
 I started working on rbxpack last week, here's what's up with the project.<!--more-->
+
+![Help command output for rbxpack, listing the possible commands: build, link, and init.](images/help.bmp)
 
 **Note: this work is from before I [took a break](https://wetdry.world/@jame/113007000571244590) from things for the last week, due to personal reasons.**
 
@@ -25,6 +27,23 @@ It also allows you to link your project and assets folders to multiple launchers
 - Edit and test your game in multiple launchers simultaneously
 
 As for what rbxpack isn't: it's not like [Rojo](https://rojo.space/). That is, rbxpack will not allow you to code your game in other code editors or adapt your rbxl for better version control.
+
+## How it's made
+
+This is what I've settled on for the project. I'm using C#, like I wanted to. C# has some drawbacks, like it will either have an inflated filesize by bundling the whole .NET thingy with it or the user has to install it themselves.[^aot]
+
+Still, I like the language a lot and want to keep using it, so here we are. I'm using [Spectre.Console](https://spectreconsole.net/), an excellent library for building console applications. Stumbled upon it in my research, it's very cool.
+
+## What's done
+
+- You can init projects! (Guides you step-by-step to generate a project config file)
+- You can kinda use `rbxpack build`, but it doesn't really do anything other than list the asset links found in the given RBXL file, and make the correct directory structure in build.
+
+That's about it... but the underlying project is in place, so this should be pretty easy to get done!
+
+![Bundle command output for rbxpack](images/bundling.bmp)
+
+![Init command output for rbxpack](images/init.bmp)
 
 ## Getting feedback
 
@@ -77,4 +96,11 @@ The command would probably look like this, based off of the workflow action name
 rbxpack run base64-extract-assets HappyHome.rbxl
 ```
 
+## Conclusion
+
+There's still a lot to do, but I want to keep blogging. I hope other people will see it and I can get new feedback for rbxpack, but writing devlogs also just helps me keep track of what I have done and what I need to do.
+
+Thank you for reading!
+
+[^aot]: There are some options for reducing file size with C# projects still, I have to look into it. [Native AOT](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot) seems cool but Spectre doesn't officially support it unfortunately :(
 [^binarymesh]: This works for all assets, not just meshes. But meshes were the main use case back then.
