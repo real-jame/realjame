@@ -3,7 +3,8 @@
 	<option value="arial">Arial (sans-serif)</option>
 	<option value="comicsans">Comic Sans MS (lol)</option>
 	<option value="consolas">Consolas (monospace)</option>
-	<option value="timesnewroman">Times New Roman (serif, default)</option>
+	<option value="timesnewroman">REM (serif, default)</option>
+	<option value="timesnewroman">Times New Roman (serif, old default)</option>
 	<option value="verdana">Verdana (sans-serif)</option>
 </select>
 <p>i'll add cooler fonts later</p>
@@ -23,6 +24,9 @@
 				break;
 			case "consolas":
 				document.body.style.fontFamily = "Consolas, monospace";
+				break;
+			case "REM":
+				document.body.style.fontFamily = "REM";
 				break;
 			case "timesnewroman":
 				document.body.style.fontFamily = "Times New Roman";

@@ -1,7 +1,7 @@
-// @font-face {
-// 	font-family: REM;
-// 	src: url(/resources/fonts/REM/REM-VariableFont_wght.ttf);
-// }
+@font-face {
+	font-family: REM;
+	src: url(/resources/fonts/REM/REM-VariableFont_wght.ttf);
+}
 
 :root {
 	color-scheme: dark;
@@ -24,7 +24,8 @@
 
 body {
 	box-sizing: border-box;
-	font-family: 'Times New Roman', Times, serif;
+	// font-family: 'Times New Roman', Times, serif;
+	font-family: REM;
 	margin: 2% 2%;
 	background-image: url(/resources/misc/starry-night512.gif);
 }
