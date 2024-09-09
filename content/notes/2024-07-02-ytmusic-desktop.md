@@ -2,7 +2,7 @@
 layout: post
 category: note
 title: "Why I'm using the (unofficial) Youtube Music desktop app"
-tags: [tech, music, yapping]
+tags: [tech, music]
 date: 2024-07-02
 published: true
 ---
