@@ -1,7 +1,7 @@
-// @font-face {
-// 	font-family: REM;
-// 	src: url(/resources/fonts/REM/REM-VariableFont_wght.ttf);
-// }
+@font-face {
+	font-family: REM;
+	src: url(/resources/fonts/REM/REM-VariableFont_wght.ttf);
+}
 
 :root {
 	color-scheme: dark;
@@ -24,7 +24,8 @@
 
 body {
 	box-sizing: border-box;
-	font-family: 'Times New Roman', Times, serif;
+	// font-family: 'Times New Roman', Times, serif;
+	font-family: REM;
 	margin: 2% 2%;
 	background-image: url(/resources/misc/starry-night512.gif);
 }
@@ -169,12 +170,12 @@ body {
 main,
 footer,
 nav {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 main {
 	float: left;
-	line-height: 1.2;
+	line-height: 1.3;
 	width: 60%;
 	margin-left: 2%;
 	margin-right: 2%;
@@ -215,4 +216,8 @@ footer {
 
 .postindex div {
 	margin: 0;
+}
+
+select {
+	max-width: 100%;
 }
