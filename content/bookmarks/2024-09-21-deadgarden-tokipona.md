@@ -3,7 +3,6 @@ layout: post
 title: "🔗 dead.garden by Jo: 'toki pona and the small-net: a match made in ma sewi' (2023)"
 tags: [tokipona]
 date: 2024-09-22
-published: true
 ---
 Pretty good article! It's about how Toki Pona has surprising similarities to the indie web philosophy.<!--more-->
 

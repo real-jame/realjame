@@ -4,7 +4,6 @@ category: note
 title: "Reading this month"
 tags: [thought, personal, reading]
 date: 2023-12-08
-published: true
 ---
 I've been reading a bit every day this month, so I'll be blogging each week about the books.<!--more-->
 <!-- About the inactivity... I don't really have any reason. I simply have not wanted to work on anything in the last... 2 weeks, maybe? -->

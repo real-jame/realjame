@@ -4,7 +4,6 @@ category: note
 title: "Where are the daily notes?"
 tags: [blog, personal, thought]
 date: 2023-10-01 21:06 -0500
-published: true
 ---
 Short answer: I've been spending my time working on [Micrathena](/projects/micrathena)!
 

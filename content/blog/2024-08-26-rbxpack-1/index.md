@@ -4,7 +4,6 @@ category: note
 title: "Progress and ideas for rbxpack"
 tags: [tech, oldroblox, devlog]
 date: 2024-08-26
-published: true
 ---
 I started working on rbxpack last week, here's what's up with the project.<!--more-->
 

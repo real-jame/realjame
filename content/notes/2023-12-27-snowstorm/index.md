@@ -4,7 +4,6 @@ category: note
 title: "Website snowstorm effect"
 tags: [tech, web]
 date: 2023-12-27
-published: true
 ---
 For the holidays, I added a simple snowing effect.<!--more-->
 

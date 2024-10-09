@@ -4,7 +4,6 @@ category: note
 title: "Permanence on the web"
 tags: [tech, web]
 date: 2024-10-07
-published: true
 ---
 Stuff goes down on the internet a lot. Sometimes it makes me sad.<!--more-->
 

@@ -4,7 +4,6 @@ category: note
 title: "Surface Pro 4 random info"
 tags: [tech]
 date: 2024-06-06
-published: true
 ---
 Here's some random tips about the Microsoft Surface Pro 4 I have that I want to note down. Like random hotkeys and stuff.<!--more-->
 

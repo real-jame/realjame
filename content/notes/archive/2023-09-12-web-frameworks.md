@@ -5,7 +5,6 @@ title: "React: When everything looks like a nail..."
 section: til
 tags: [textarea, react, web, frontend, tech]
 date: 2023-09-12
-published: true
 ---
 
 I've been working on [textarea.site](https://github.com/real-jame/textarea/tree/next) as a way to dive back into the beautiful and the ugly parts of front-end web development. After a few days of work, I decided to rewrite the entire project in [Svelte](https://svelte.dev). Surprising? Maybe not. It's about the right tool for the job, and here, [React](https://react.dev) is not it.

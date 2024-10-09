@@ -4,7 +4,6 @@ category: note
 title: "2 Opera 8 quirks with the simple layout"
 tags: [tech, web, retro]
 date: 2024-03-14
-published: true
 ---
 
 I was testing this with Opera 8. I wasn't sure which version the DSi browser was built on (my target when making this layout), so I just went for the lowest one, and a bit lower to be safe: Opera 8.<!--more-->

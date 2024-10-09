@@ -4,7 +4,6 @@ category: note
 title: "I'm joining Bookwyrm 📖"
 tags: [thought, personal, reading, fediverse]
 date: 2023-12-26
-published: true
 ---
 I said I've been getting back into reading books. Now I'm on Bookwyrm, so you can keep up with what I'm reading, because I keep being lazy about writing posts for them. 🙏<!--more-->
 

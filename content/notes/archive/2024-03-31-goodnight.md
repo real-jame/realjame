@@ -4,7 +4,6 @@ category: note
 title: "Good night"
 tags: [personal, thought, journaling]
 date: 2024-03-31
-published: true
 ---
 I wish you well.
 

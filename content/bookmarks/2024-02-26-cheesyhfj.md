@@ -3,7 +3,6 @@ layout: post
 title: "🔗🎞️ Cheesy Hfj: 'i am frustrated'"
 tags: []
 date: 2024-02-26
-published: true
 ---
 "I am frustrated about being frustrated about this many things."<!--more-->
 >

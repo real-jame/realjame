@@ -4,7 +4,6 @@ category: note
 title: "Cold nights in Florida"
 tags: [personal, thought]
 date: 2023-10-11 23:08 -0500
-published: true
 ---
 <!-- I'm not just talking about the weather with the final sentence (not the caption). I hope that was implied. -->
 <!-- I've said sometimes in calls to my friends that things will get "funky" in maybe 20 years -->

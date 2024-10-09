@@ -4,7 +4,6 @@ category: note
 title: "Writing without smarts"
 tags: [writing, thought]
 date: 2023-10-07
-published: true
 ---
 I'm not (currently) a full-on *writer* in my eyes, but I still write a lot of blog posts, and essays in school. I've noticed I use writing apps that come without any "smart" features like spell check, auto correct, etc. But is it really a good thing to have?<!--more-->
 

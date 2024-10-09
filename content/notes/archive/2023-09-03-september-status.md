@@ -4,7 +4,6 @@ category: note
 title: "September Status"
 tags: [personal, status-update, textarea.site, roblox, thought]
 date: 2023-09-03
-published: true
 ---
 Day 3 of September. Things are going OK for me, I just wanted to write down here what I'm aiming for this month. Right now, I'm focusing on college applications and web development projects, so Roblox stuff will keep taking a back seat.
 

@@ -4,7 +4,6 @@ category: note
 title: "Wanna cut down on phone usage? Try a smartwatch!"
 tags: [thought, personal, tech, phone, watch, health]
 date: 2023-11-25
-published: true
 ---
 Buy an expensive companion for your phone, and that'll lead you to use your phone *less*? It sounds like an oxymoron. But after over a month of using my [Google Pixel Watch](https://en.wikipedia.org/wiki/Pixel_Watch), it seems to be true!
 <!-- 

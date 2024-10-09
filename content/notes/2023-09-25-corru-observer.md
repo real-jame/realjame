@@ -4,7 +4,6 @@ category: note
 title: "Thoughts on corru.observer (it's very cool)"
 tags: [web, art, game, review, thought]
 date: 2023-09-25
-published: true
 ---
 corru.observer is a very strange website. It's an interactive story that's part 3D game, part visual novel, part website. [Hypertext fiction](https://en.wikipedia.org/wiki/Hypertext_fiction) at its finest.<!--more-->
 

@@ -4,7 +4,6 @@ category: blog
 title: "Some media I enjoyed recently"
 tags: [art]
 date: 2024-10-10
-published: true
 ---
 Random thoughts on movies, shows, books, and albums, etc.<!--more-->
 

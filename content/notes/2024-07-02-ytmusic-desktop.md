@@ -4,7 +4,6 @@ category: note
 title: "Why I'm using the (unofficial) Youtube Music desktop app"
 tags: [tech, music]
 date: 2024-07-02
-published: true
 ---
 Maybe it's weird I use YouTube Music in the first place? lol<!--more-->
 
