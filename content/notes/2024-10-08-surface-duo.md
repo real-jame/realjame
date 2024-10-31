@@ -6,7 +6,7 @@ tags: [tech, microsoft]
 # images: [images/thumbnail.png]
 date: 2023-10-08
 ---
-
+<!--more-->
 > The company threw in the towel with Android phone hardware last year when it decided to cut back on the Surface device portfolio, leading to the departure of ex-Windows and Surface boss Panos Panay. Since then, Microsoft has brushed Surface Duo under the rug, and now the Surface Duo 2 has received its final security update ahead of the end of support date on October 21, meaning no more support is planned. 
 
 > And that marks the true end to Surface Duo. The product line is dead, and Microsoft has no intention of reviving it with future Android phone hardware. This is the second time that Microsoft has abandoned a phone business, the first time being with Windows Phone and Lumia in 2017.
